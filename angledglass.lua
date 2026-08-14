@@ -1,8 +1,9 @@
 angledglass = {}
 
+local S = core.get_translator(core.get_current_modname())
+
 -- Angled place function
 -- To use put "on_place = angledglass.angled_place" in the node def
-
 function angledglass.angled_place(itemstack, placer, pointed_thing)
 	local placer_pos = placer:get_pos()
 	local pos = pointed_thing.above
@@ -61,569 +62,730 @@ function angledglass.register_glass(subname, recipeitem, groups, images, descrip
 				{0, -0.5, 0, 0.125, 0.5, 0.125},
 				{-0.125, -0.5, -0.125, 0, 0.5, 0},
 				{-0.0625, -0.5, -0.0625, 0.0625, 0.5, 0.0625},
-			}
+			},
 		},
-		on_place = angledglass.angled_place
+		on_place = angledglass.angled_place,
 	})
 end
 
 -- Register glass types
 
-angledglass.register_glass("_acacia_wood_glass", "default:acacia_wood",
+angledglass.register_glass(
+	"_acacia_wood_glass",
+	"default:acacia_wood",
 	{choppy = 2, oddly_breakable_by_hand = 2, flammable = 3, wood = 1},
 	{"default_glass.png", "default_acacia_wood.png"},
-	"Acacia Wood Glass",
+	S("Acacia Wood Glass"),
 	default.node_sound_glass_defaults()
 )
 
-angledglass.register_glass("_acacia_wood_obsidian_glass", "default:acacia_wood",
+angledglass.register_glass(
+	"_acacia_wood_obsidian_glass",
+	"default:acacia_wood",
 	{choppy = 2, oddly_breakable_by_hand = 2, flammable = 3, wood = 1},
 	{"default_obsidian_glass.png", "default_acacia_wood.png"},
-	"Acacia Wood Obsidian Glass",
+	S("Acacia Wood Obsidian Glass"),
 	default.node_sound_glass_defaults()
 )
 
-angledglass.register_glass("_aspen_wood_glass", "default:aspen_wood",
+angledglass.register_glass(
+	"_aspen_wood_glass",
+	"default:aspen_wood",
 	{choppy = 2, oddly_breakable_by_hand = 2, flammable = 3, wood = 1},
 	{"default_glass.png", "default_aspen_wood.png"},
-	"Aspen Wood Glass",
+	S("Aspen Wood Glass"),
 	default.node_sound_glass_defaults()
 )
 
-angledglass.register_glass("_aspen_wood_obsidian_glass", "default:aspen_wood",
+angledglass.register_glass(
+	"_aspen_wood_obsidian_glass",
+	"default:aspen_wood",
 	{choppy = 2, oddly_breakable_by_hand = 2, flammable = 3, wood = 1},
 	{"default_obsidian_glass.png", "default_aspen_wood.png"},
-	"Aspen Wood Glass",
+	S("Aspen Wood Glass"),
 	default.node_sound_glass_defaults()
 )
 
-angledglass.register_glass("_junglewood_glass", "default:junglewood",
+angledglass.register_glass(
+	"_junglewood_glass",
+	"default:junglewood",
 	{choppy = 2, oddly_breakable_by_hand = 2, flammable = 3, wood = 1},
 	{"default_glass.png", "default_junglewood.png"},
-	"Junglewood Glass",
+	S("Junglewood Glass"),
 	default.node_sound_glass_defaults()
 )
 
-angledglass.register_glass("_junglewood_obsidian_glass", "default:junglewood",
+angledglass.register_glass(
+	"_junglewood_obsidian_glass",
+	"default:junglewood",
 	{choppy = 2, oddly_breakable_by_hand = 2, flammable = 3, wood = 1},
-	{"default_obsidian_glass.png", "default_junglewood.png",},
-	"Junglewood Glass",
+	{"default_obsidian_glass.png", "default_junglewood.png"},
+	S("Junglewood Glass"),
 	default.node_sound_glass_defaults()
 )
 
-angledglass.register_glass("_pine_wood_glass", "default:pine_wood",
+angledglass.register_glass(
+	"_pine_wood_glass",
+	"default:pine_wood",
 	{choppy = 2, oddly_breakable_by_hand = 2, flammable = 3, wood = 1},
 	{"default_glass.png", "default_pine_wood.png"},
-	"Pine Wood Glass",
+	S("Pine Wood Glass"),
 	default.node_sound_glass_defaults()
 )
 
-angledglass.register_glass("_pine_wood_obsidian_glass", "default:pine_wood",
+angledglass.register_glass(
+	"_pine_wood_obsidian_glass",
+	"default:pine_wood",
 	{choppy = 2, oddly_breakable_by_hand = 2, flammable = 3, wood = 1},
 	{"default_obsidian_glass.png", "default_pine_wood.png"},
-	"Pine Wood Glass",
+	S("Pine Wood Glass"),
 	default.node_sound_glass_defaults()
 )
 
-angledglass.register_glass("_wooden_glass", "default:wood",
+angledglass.register_glass(
+	"_wooden_glass",
+	"default:wood",
 	{choppy = 2, oddly_breakable_by_hand = 2, flammable = 3, wood = 1},
 	{"default_glass.png", "default_wood.png"},
-	"Wooden Glass",
+	S("Wooden Glass"),
 	default.node_sound_glass_defaults()
 )
 
-angledglass.register_glass("_wooden_obsidian_glass", "default:wood",
+angledglass.register_glass(
+	"_wooden_obsidian_glass",
+	"default:wood",
 	{choppy = 2, oddly_breakable_by_hand = 2, flammable = 3, wood = 1},
 	{"default_obsidian_glass.png", "default_wood.png"},
-	"Wooden Obsidian Glass",
+	S("Wooden Obsidian Glass"),
 	default.node_sound_glass_defaults()
 )
 
-angledglass.register_glass("_brick_glass", "default:brick",
+angledglass.register_glass(
+	"_brick_glass",
+	"default:brick",
 	{cracky = 2, oddly_breakable_by_hand = 2, stone = 1},
 	{"default_glass.png", "default_brick.png"},
-	"Brick Glass",
+	S("Brick Glass"),
 	default.node_sound_glass_defaults()
 )
 
-angledglass.register_glass("_brick_obsidian_glass", "default:brick",
+angledglass.register_glass(
+	"_brick_obsidian_glass",
+	"default:brick",
 	{cracky = 2, oddly_breakable_by_hand = 2, stone = 1},
 	{"default_obsidian_glass.png", "default_brick.png"},
-	"Brick Obsidian Glass",
+	S("Brick Obsidian Glass"),
 	default.node_sound_glass_defaults()
 )
 
-angledglass.register_glass("_cobble_glass", "default:cobble",
+angledglass.register_glass(
+	"_cobble_glass",
+	"default:cobble",
 	{cracky = 2, oddly_breakable_by_hand = 2, stone = 1},
 	{"default_glass.png", "default_cobble.png"},
-	"Cobble Glass",
+	S("Cobble Glass"),
 	default.node_sound_glass_defaults()
 )
 
-angledglass.register_glass("_cobble_obsidian_glass", "default:cobble",
+angledglass.register_glass(
+	"_cobble_obsidian_glass",
+	"default:cobble",
 	{cracky = 2, oddly_breakable_by_hand = 2, stone = 1},
 	{"default_obsidian_glass.png", "default_cobble.png"},
-	"Cobble Obsidian Glass",
+	S("Cobble Obsidian Glass"),
 	default.node_sound_glass_defaults()
 )
 
-angledglass.register_glass("_mossycobble_glass", "default:mossycobble",
+angledglass.register_glass(
+	"_mossycobble_glass",
+	"default:mossycobble",
 	{cracky = 2, oddly_breakable_by_hand = 2, stone = 1},
 	{"default_glass.png", "default_mossycobble.png"},
-	"Mossycobble Glass",
+	S("Mossycobble Glass"),
 	default.node_sound_glass_defaults()
 )
 
-angledglass.register_glass("_mossycobble_obsidian_glass", "default:mossycobble",
+angledglass.register_glass(
+	"_mossycobble_obsidian_glass",
+	"default:mossycobble",
 	{cracky = 2, oddly_breakable_by_hand = 2, stone = 1},
 	{"default_obsidian_glass.png", "default_mossycobble.png"},
-	"Mossycobble Obsidian Glass",
+	S("Mossycobble Obsidian Glass"),
 	default.node_sound_glass_defaults()
 )
 
-angledglass.register_glass("_stone_glass", "default:stone",
+angledglass.register_glass(
+	"_stone_glass",
+	"default:stone",
 	{cracky = 2, oddly_breakable_by_hand = 2, stone = 1},
 	{"default_glass.png", "default_stone.png"},
-	"Stone Glass",
+	S("Stone Glass"),
 	default.node_sound_glass_defaults()
 )
 
-angledglass.register_glass("_stone_obsidian_glass", "default:stone",
+angledglass.register_glass(
+	"_stone_obsidian_glass",
+	"default:stone",
 	{cracky = 2, oddly_breakable_by_hand = 2, stone = 1},
 	{"default_obsidian_glass.png", "default_stone.png"},
-	"Stone Obsidian Glass",
+	S("Stone Obsidian Glass"),
 	default.node_sound_glass_defaults()
 )
 
-angledglass.register_glass("_stone_block_glass", "default:stone_block",
+angledglass.register_glass(
+	"_stone_block_glass",
+	"default:stone_block",
 	{cracky = 2, oddly_breakable_by_hand = 2, stone = 1},
 	{"default_glass.png", "default_stone_block.png"},
-	"Stone Block Glass",
+	S("Stone Block Glass"),
 	default.node_sound_glass_defaults()
 )
 
-angledglass.register_glass("_stone_block_obsidian_glass", "default:stone_block",
+angledglass.register_glass(
+	"_stone_block_obsidian_glass",
+	"default:stone_block",
 	{cracky = 2, oddly_breakable_by_hand = 2, stone = 1},
 	{"default_obsidian_glass.png", "default_stone_block.png"},
-	"Stone Block Obsidian Glass",
+	S("Stone Block Obsidian Glass"),
 	default.node_sound_glass_defaults()
 )
 
-angledglass.register_glass("_stone_brick_glass", "default:stone_brick",
+angledglass.register_glass(
+	"_stone_brick_glass",
+	"default:stone_brick",
 	{cracky = 2, oddly_breakable_by_hand = 2, stone = 1},
 	{"default_glass.png", "default_stone_brick.png"},
-	"Stone Brick Glass",
+	S("Stone Brick Glass"),
 	default.node_sound_glass_defaults()
 )
 
-angledglass.register_glass("_stone_brick_obsidian_glass", "default:stone_brick",
+angledglass.register_glass(
+	"_stone_brick_obsidian_glass",
+	"default:stone_brick",
 	{cracky = 2, oddly_breakable_by_hand = 2, stone = 1},
 	{"default_obsidian_glass.png", "default_stone_brick.png"},
-	"Stone Brick Obsidian Glass",
+	S("Stone Brick Obsidian Glass"),
 	default.node_sound_glass_defaults()
 )
 
-angledglass.register_glass("_desert_cobble_glass", "default:desert_cobble",
+angledglass.register_glass(
+	"_desert_cobble_glass",
+	"default:desert_cobble",
 	{cracky = 2, oddly_breakable_by_hand = 2, stone = 1},
 	{"default_glass.png", "default_desert_cobble.png"},
-	"Desert Cobble Glass",
+	S("Desert Cobble Glass"),
 	default.node_sound_glass_defaults()
 )
 
-angledglass.register_glass("_desert_cobble_obsidian_glass", "default:desert_cobble",
+angledglass.register_glass(
+	"_desert_cobble_obsidian_glass",
+	"default:desert_cobble",
 	{cracky = 2, oddly_breakable_by_hand = 2, stone = 1},
 	{"default_obsidian_glass.png", "default_desert_cobble.png"},
-	"Desert Cobble Obsidian Glass",
+	S("Desert Cobble Obsidian Glass"),
 	default.node_sound_glass_defaults()
 )
 
-angledglass.register_glass("_desert_stone_glass", "default:desert_stone",
+angledglass.register_glass(
+	"_desert_stone_glass",
+	"default:desert_stone",
 	{cracky = 2, oddly_breakable_by_hand = 2, stone = 1},
 	{"default_glass.png", "default_desert_stone.png"},
-	"Desert Stone Glass",
+	S("Desert Stone Glass"),
 	default.node_sound_glass_defaults()
 )
 
-angledglass.register_glass("_desert_stone_obsidian_glass", "default:desert_stone",
+angledglass.register_glass(
+	"_desert_stone_obsidian_glass",
+	"default:desert_stone",
 	{cracky = 2, oddly_breakable_by_hand = 2, stone = 1},
 	{"default_obsidian_glass.png", "default_desert_stone.png"},
-	"Desert Stone Obsidian Glass",
+	S("Desert Stone Obsidian Glass"),
 	default.node_sound_glass_defaults()
 )
 
-angledglass.register_glass("_desert_stone_block_glass", "default:desert_stone_block",
+angledglass.register_glass(
+	"_desert_stone_block_glass",
+	"default:desert_stone_block",
 	{cracky = 2, oddly_breakable_by_hand = 2, stone = 1},
 	{"default_glass.png", "default_desert_stone_block.png"},
-	"Desert Stone Block Glass",
+	S("Desert Stone Block Glass"),
 	default.node_sound_glass_defaults()
 )
 
-angledglass.register_glass("_desert_stone_block_obsidian_glass", "default:desert_stone_block",
+angledglass.register_glass(
+	"_desert_stone_block_obsidian_glass",
+	"default:desert_stone_block",
 	{cracky = 2, oddly_breakable_by_hand = 2, stone = 1},
 	{"default_obsidian_glass.png", "default_desert_stone_block.png"},
-	"Desert Stone Block Obsidian Glass",
+	S("Desert Stone Block Obsidian Glass"),
 	default.node_sound_glass_defaults()
 )
 
-angledglass.register_glass("_desert_stone_brick_glass", "default:desert_stone_brick",
+angledglass.register_glass(
+	"_desert_stone_brick_glass",
+	"default:desert_stone_brick",
 	{cracky = 2, oddly_breakable_by_hand = 2, stone = 1},
 	{"default_glass.png", "default_desert_stone_brick.png"},
-	"Desert Stone Brick Glass",
+	S("Desert Stone Brick Glass"),
 	default.node_sound_glass_defaults()
 )
 
-angledglass.register_glass("_desert_stone_brick_obsidian_glass", "default:desert_stone_brick",
+angledglass.register_glass(
+	"_desert_stone_brick_obsidian_glass",
+	"default:desert_stone_brick",
 	{cracky = 2, oddly_breakable_by_hand = 2, stone = 1},
 	{"default_obsidian_glass.png", "default_desert_stone_brick.png"},
-	"Desert Stone Brick Obsidian Glass",
+	S("Desert Stone Brick Obsidian Glass"),
 	default.node_sound_glass_defaults()
 )
 
-angledglass.register_glass("_desert_sandstone_glass", "default:desert_sandstone",
+angledglass.register_glass(
+	"_desert_sandstone_glass",
+	"default:desert_sandstone",
 	{cracky = 2, oddly_breakable_by_hand = 2, stone = 1},
 	{"default_glass.png", "default_desert_sandstone.png"},
-	"Desert Sandstone Glass",
+	S("Desert Sandstone Glass"),
 	default.node_sound_glass_defaults()
 )
 
-angledglass.register_glass("_desert_sandstone_obsidian_glass", "default:desert_sandstone",
+angledglass.register_glass(
+	"_desert_sandstone_obsidian_glass",
+	"default:desert_sandstone",
 	{cracky = 2, oddly_breakable_by_hand = 2, stone = 1},
 	{"default_obsidian_glass.png", "default_desert_sandstone.png"},
-	"Desert Sandstone Obsidian Glass",
+	S("Desert Sandstone Obsidian Glass"),
 	default.node_sound_glass_defaults()
 )
 
-angledglass.register_glass("_desert_sandstone_block_glass", "default:desert_sandstone_block",
+angledglass.register_glass(
+	"_desert_sandstone_block_glass",
+	"default:desert_sandstone_block",
 	{cracky = 2, oddly_breakable_by_hand = 2, stone = 1},
 	{"default_glass.png", "default_desert_sandstone_block.png"},
-	"Desert Sandstone Block Glass",
+	S("Desert Sandstone Block Glass"),
 	default.node_sound_glass_defaults()
 )
 
-angledglass.register_glass("_desert_sandstone_block_obsidian_glass", "default:desert_sandstone_block",
+angledglass.register_glass(
+	"_desert_sandstone_block_obsidian_glass",
+	"default:desert_sandstone_block",
 	{cracky = 2, oddly_breakable_by_hand = 2, stone = 1},
 	{"default_obsidian_glass.png", "default_desert_sandstone_block.png"},
-	"Desert Sandstone Block Obsidian Glass",
+	S("Desert Sandstone Block Obsidian Glass"),
 	default.node_sound_glass_defaults()
 )
 
-angledglass.register_glass("_desert_sandstone_brick_glass", "default:desert_sandstone_brick",
+angledglass.register_glass(
+	"_desert_sandstone_brick_glass",
+	"default:desert_sandstone_brick",
 	{cracky = 2, oddly_breakable_by_hand = 2, stone = 1},
 	{"default_glass.png", "default_desert_sandstone_brick.png"},
-	"Desert Sandstone Brick Glass",
+	S("Desert Sandstone Brick Glass"),
 	default.node_sound_glass_defaults()
 )
 
-angledglass.register_glass("_desert_sandstone_brick_obsidian_glass", "default:desert_sandstone_brick",
+angledglass.register_glass(
+	"_desert_sandstone_brick_obsidian_glass",
+	"default:desert_sandstone_brick",
 	{cracky = 2, oddly_breakable_by_hand = 2, stone = 1},
 	{"default_obsidian_glass.png", "default_desert_sandstone_brick.png"},
-	"Desert Sandstone Brick Obsidian Glass",
+	S("Desert Sandstone Brick Obsidian Glass"),
 	default.node_sound_glass_defaults()
 )
 
-angledglass.register_glass("_sandstone_glass", "default:sandstone",
+angledglass.register_glass(
+	"_sandstone_glass",
+	"default:sandstone",
 	{cracky = 2, oddly_breakable_by_hand = 2, stone = 1},
 	{"default_glass.png", "default_sandstone.png"},
-	"Sandstone Glass",
+	S("Sandstone Glass"),
 	default.node_sound_glass_defaults()
 )
 
-angledglass.register_glass("_sandstone_obsidian_glass", "default:sandstone",
+angledglass.register_glass(
+	"_sandstone_obsidian_glass",
+	"default:sandstone",
 	{cracky = 2, oddly_breakable_by_hand = 2, stone = 1},
 	{"default_obsidian_glass.png", "default_sandstone.png"},
-	"Sandstone Obsidian Glass",
+	S("Sandstone Obsidian Glass"),
 	default.node_sound_glass_defaults()
 )
 
-angledglass.register_glass("_sandstone_block_glass", "default:sandstone_block",
+angledglass.register_glass(
+	"_sandstone_block_glass",
+	"default:sandstone_block",
 	{cracky = 2, oddly_breakable_by_hand = 2, stone = 1},
 	{"default_glass.png", "default_sandstone_block.png"},
-	"Sandstone Block Glass",
+	S("Sandstone Block Glass"),
 	default.node_sound_glass_defaults()
 )
 
-angledglass.register_glass("_sandstone_block_obsidian_glass", "default:sandstone_block",
+angledglass.register_glass(
+	"_sandstone_block_obsidian_glass",
+	"default:sandstone_block",
 	{cracky = 2, oddly_breakable_by_hand = 2, stone = 1},
 	{"default_obsidian_glass.png", "default_sandstone_block.png"},
-	"Sandstone Block Obsidian Glass",
+	S("Sandstone Block Obsidian Glass"),
 	default.node_sound_glass_defaults()
 )
 
-angledglass.register_glass("_sandstone_brick_glass", "default:sandstone_brick",
+angledglass.register_glass(
+	"_sandstone_brick_glass",
+	"default:sandstone_brick",
 	{cracky = 2, oddly_breakable_by_hand = 2, stone = 1},
 	{"default_glass.png", "default_sandstone_brick.png"},
-	"Sandstone Brick Glass",
+	S("Sandstone Brick Glass"),
 	default.node_sound_glass_defaults()
 )
 
-angledglass.register_glass("_sandstone_brick_obsidian_glass", "default:sandstone_brick",
+angledglass.register_glass(
+	"_sandstone_brick_obsidian_glass",
+	"default:sandstone_brick",
 	{cracky = 2, oddly_breakable_by_hand = 2, stone = 1},
 	{"default_obsidian_glass.png", "default_sandstone_brick.png"},
-	"Sandstone Brick Obsidian Glass",
+	S("Sandstone Brick Obsidian Glass"),
 	default.node_sound_glass_defaults()
 )
 
-angledglass.register_glass("_silver_sandstone_glass", "default:silver_sandstone",
+angledglass.register_glass(
+	"_silver_sandstone_glass",
+	"default:silver_sandstone",
 	{cracky = 2, oddly_breakable_by_hand = 2, stone = 1},
 	{"default_glass.png", "default_silver_sandstone.png"},
-	"Silver Sandstone Glass",
+	S("Silver Sandstone Glass"),
 	default.node_sound_glass_defaults()
 )
 
-angledglass.register_glass("_silver_sandstone_obsidian_glass", "default:silver_sandstone",
+angledglass.register_glass(
+	"_silver_sandstone_obsidian_glass",
+	"default:silver_sandstone",
 	{cracky = 2, oddly_breakable_by_hand = 2, stone = 1},
 	{"default_obsidian_glass.png", "default_silver_sandstone.png"},
-	"Silver Sandstone Obsidian Glass",
+	S("Silver Sandstone Obsidian Glass"),
 	default.node_sound_glass_defaults()
 )
 
-angledglass.register_glass("_silver_sandstone_block_glass", "default:silver_sandstone_block",
+angledglass.register_glass(
+	"_silver_sandstone_block_glass",
+	"default:silver_sandstone_block",
 	{cracky = 2, oddly_breakable_by_hand = 2, stone = 1},
 	{"default_glass.png", "default_silver_sandstone_block.png"},
-	"Silver Sandstone Block Glass",
+	S("Silver Sandstone Block Glass"),
 	default.node_sound_glass_defaults()
 )
 
-angledglass.register_glass("_silver_sandstone_block_obsidian_glass", "default:silver_sandstone_block",
+angledglass.register_glass(
+	"_silver_sandstone_block_obsidian_glass",
+	"default:silver_sandstone_block",
 	{cracky = 2, oddly_breakable_by_hand = 2, stone = 1},
 	{"default_obsidian_glass.png", "default_silver_sandstone_block.png"},
-	"Silver Sandstone Block Obsidian Glass",
+	S("Silver Sandstone Block Obsidian Glass"),
 	default.node_sound_glass_defaults()
 )
 
-angledglass.register_glass("_silver_sandstone_brick_glass", "default:silver_sandstone_brick",
+angledglass.register_glass(
+	"_silver_sandstone_brick_glass",
+	"default:silver_sandstone_brick",
 	{cracky = 2, oddly_breakable_by_hand = 2, stone = 1},
 	{"default_glass.png", "default_silver_sandstone_brick.png"},
-	"Silver Sandstone Brick Glass",
+	S("Silver Sandstone Brick Glass"),
 	default.node_sound_glass_defaults()
 )
 
-angledglass.register_glass("_silver_sandstone_brick_obsidian_glass", "default:silver_sandstone_brick",
+angledglass.register_glass(
+	"_silver_sandstone_brick_obsidian_glass",
+	"default:silver_sandstone_brick",
 	{cracky = 2, oddly_breakable_by_hand = 2, stone = 1},
 	{"default_obsidian_glass.png", "default_silver_sandstone_brick.png"},
-	"Silver Sandstone Brick Obsidian Glass",
+	S("Silver Sandstone Brick Obsidian Glass"),
 	default.node_sound_glass_defaults()
 )
 
-angledglass.register_glass("_bronze_block_glass", "default:bronze_block",
+angledglass.register_glass(
+	"_bronze_block_glass",
+	"default:bronze_block",
 	{cracky = 2, oddly_breakable_by_hand = 2, stone = 1},
 	{"default_glass.png", "default_bronze_block.png"},
-	"Bronze Block Glass",
+	S("Bronze Block Glass"),
 	default.node_sound_glass_defaults()
 )
 
-angledglass.register_glass("_bronze_block_obsidian_glass", "default:bronze_block",
+angledglass.register_glass(
+	"_bronze_block_obsidian_glass",
+	"default:bronze_block",
 	{cracky = 2, oddly_breakable_by_hand = 2, stone = 1},
 	{"default_obsidian_glass.png", "default_bronze_block.png"},
-	"Bronze Block Obsidian Glass",
+	S("Bronze Block Obsidian Glass"),
 	default.node_sound_glass_defaults()
 )
 
-angledglass.register_glass("_clay_glass", "default:clay",
+angledglass.register_glass(
+	"_clay_glass",
+	"default:clay",
 	{cracky = 2, oddly_breakable_by_hand = 2, stone = 1},
 	{"default_glass.png", "default_clay.png"},
-	"Clay Glass",
+	S("Clay Glass"),
 	default.node_sound_glass_defaults()
 )
 
-angledglass.register_glass("_clay_obsidian_glass", "default:clay",
+angledglass.register_glass(
+	"_clay_obsidian_glass",
+	"default:clay",
 	{cracky = 2, oddly_breakable_by_hand = 2, stone = 1},
 	{"default_obsidian_glass.png", "default_clay.png"},
-	"Clay Obsidian Glass",
+	S("Clay Obsidian Glass"),
 	default.node_sound_glass_defaults()
 )
 
-angledglass.register_glass("_coal_block_glass", "default:coal_block",
+angledglass.register_glass(
+	"_coal_block_glass",
+	"default:coal_block",
 	{cracky = 2, oddly_breakable_by_hand = 2, stone = 1},
 	{"default_glass.png", "default_coal_block.png"},
-	"Coal Block Glass",
-	default.node_sound_glass_defaults())
+	S("Coal Block Glass"),
+	default.node_sound_glass_defaults()
+)
 
-angledglass.register_glass("_coal_block_obsidian_glass", "default:coal_block",
+angledglass.register_glass(
+	"_coal_block_obsidian_glass",
+	"default:coal_block",
 	{cracky = 2, oddly_breakable_by_hand = 2, stone = 1},
 	{"default_obsidian_glass.png", "default_coal_block.png"},
-	"Coal Block Obsidian Glass",
+	S("Coal Block Obsidian Glass"),
 	default.node_sound_glass_defaults()
 )
 
-angledglass.register_glass("_copper_block_glass", "default:copper_block",
+angledglass.register_glass(
+	"_copper_block_glass",
+	"default:copper_block",
 	{cracky = 2, oddly_breakable_by_hand = 2, stone = 1},
 	{"default_glass.png", "default_copper_block.png"},
-	"Copper Block Glass",
+	S("Copper Block Glass"),
 	default.node_sound_glass_defaults()
 )
 
-angledglass.register_glass("_copper_block_obsidian_glass", "default:copper_block",
+angledglass.register_glass(
+	"_copper_block_obsidian_glass",
+	"default:copper_block",
 	{cracky = 2, oddly_breakable_by_hand = 2, stone = 1},
 	{"default_obsidian_glass.png", "default_copper_block.png"},
-	"Copper Block Obsidian Glass",
+	S("Copper Block Obsidian Glass"),
 	default.node_sound_glass_defaults()
 )
 
-angledglass.register_glass("_diamond_block_glass", "default:diamond_block",
+angledglass.register_glass(
+	"_diamond_block_glass",
+	"default:diamond_block",
 	{cracky = 2, oddly_breakable_by_hand = 2, stone = 1},
 	{"default_glass.png", "default_diamond_block.png"},
-	"Diamond Block Glass",
+	S("Diamond Block Glass"),
 	default.node_sound_glass_defaults()
 )
 
-angledglass.register_glass("_diamond_block_obsidian_glass", "default:diamond_block",
+angledglass.register_glass(
+	"_diamond_block_obsidian_glass",
+	"default:diamond_block",
 	{cracky = 2, oddly_breakable_by_hand = 2, stone = 1},
 	{"default_obsidian_glass.png", "default_diamond_block.png"},
-	"Diamond Block Obsidian Glass",
+	S("Diamond Block Obsidian Glass"),
 	default.node_sound_glass_defaults()
 )
 
-angledglass.register_glass("_gold_block_glass", "default:gold_block",
+angledglass.register_glass(
+	"_gold_block_glass",
+	"default:gold_block",
 	{cracky = 2, oddly_breakable_by_hand = 2, stone = 1},
 	{"default_glass.png", "default_gold_block.png"},
-	"Gold Block Glass",
+	S("Gold Block Glass"),
 	default.node_sound_glass_defaults()
 )
 
-angledglass.register_glass("_gold_block_obsidian_glass", "default:gold_block",
+angledglass.register_glass(
+	"_gold_block_obsidian_glass",
+	"default:gold_block",
 	{cracky = 2, oddly_breakable_by_hand = 2, stone = 1},
 	{"default_obsidian_glass.png", "default_gold_block.png"},
-	"Gold Block Obsidian Glass",
+	S("Gold Block Obsidian Glass"),
 	default.node_sound_glass_defaults()
 )
 
-angledglass.register_glass("_mese_block_glass", "default:mese_block",
+angledglass.register_glass(
+	"_mese_block_glass",
+	"default:mese_block",
 	{cracky = 2, oddly_breakable_by_hand = 2, stone = 1},
 	{"default_glass.png", "default_mese_block.png"},
-	"Mese Block Glass",
+	S("Mese Block Glass"),
 	default.node_sound_glass_defaults()
 )
 
-angledglass.register_glass("_mese_block_obsidian_glass", "default:mese_block",
+angledglass.register_glass(
+	"_mese_block_obsidian_glass",
+	"default:mese_block",
 	{cracky = 2, oddly_breakable_by_hand = 2, stone = 1},
 	{"default_obsidian_glass.png", "default_mese_block.png"},
-	"Mese Block Obsidian Glass",
+	S("Mese Block Obsidian Glass"),
 	default.node_sound_glass_defaults()
 )
 
-angledglass.register_glass("_steel_block_glass", "default:steel_block",
+angledglass.register_glass(
+	"_steel_block_glass",
+	"default:steel_block",
 	{cracky = 2, oddly_breakable_by_hand = 2, stone = 1},
 	{"default_glass.png", "default_steel_block.png"},
-	"Steel Block Glass",
+	S("Steel Block Glass"),
 	default.node_sound_glass_defaults()
 )
 
-angledglass.register_glass("_steel_block_obsidian_glass", "default:steel_block",
+angledglass.register_glass(
+	"_steel_block_obsidian_glass",
+	"default:steel_block",
 	{cracky = 2, oddly_breakable_by_hand = 2, stone = 1},
 	{"default_obsidian_glass.png", "default_steel_block.png"},
-	"Steel Block Glass",
+	S("Steel Block Obsidian Glass"),
 	default.node_sound_glass_defaults()
 )
 
-angledglass.register_glass("_tin_block_glass", "default:tin_block",
+angledglass.register_glass(
+	"_tin_block_glass",
+	"default:tin_block",
 	{cracky = 2, oddly_breakable_by_hand = 2, stone = 1},
 	{"default_glass.png", "default_tin_block.png"},
-	"Tin Block Glass",
+	S("Tin Block Glass"),
 	default.node_sound_glass_defaults()
 )
 
-angledglass.register_glass("_tin_block_obsidian_glass", "default:tin_block",
+angledglass.register_glass(
+	"_tin_block_obsidian_glass",
+	"default:tin_block",
 	{cracky = 2, oddly_breakable_by_hand = 2, stone = 1},
 	{"default_obsidian_glass.png", "default_tin_block.png"},
-	"Tin Block Glass",
+	S("Tin Block Obsidian Glass"),
 	default.node_sound_glass_defaults()
 )
 
-angledglass.register_glass("_glass_glass", "default:glass",
+angledglass.register_glass(
+	"_glass_glass",
+	"default:glass",
 	{cracky = 2, oddly_breakable_by_hand = 2, stone = 1},
 	{"default_glass.png", "default_glass.png"},
-	"Glass Glass",
+	S("Glass Glass"),
 	default.node_sound_glass_defaults()
 )
 
-angledglass.register_glass("_glass_obsidian_glass", "default:glass",
+angledglass.register_glass(
+	"_glass_obsidian_glass",
+	"default:glass",
 	{cracky = 2, oddly_breakable_by_hand = 2, stone = 1},
 	{"default_obsidian_glass.png", "default_glass.png"},
-	"Glass Obsidian Glass",
+	S("Glass Obsidian Glass"),
 	default.node_sound_glass_defaults()
 )
 
-angledglass.register_glass("_obsidian_glass", "default:obsidian",
+angledglass.register_glass(
+	"_obsidian_glass",
+	"default:obsidian",
 	{cracky = 2, oddly_breakable_by_hand = 2, stone = 1},
 	{"default_glass.png", "default_obsidian.png"},
-	"Obsidian Glass",
+	S("Obsidian Glass"),
 	default.node_sound_glass_defaults()
 )
 
-angledglass.register_glass("_obsidian_obsidian_glass", "default:obsidian",
+angledglass.register_glass(
+	"_obsidian_obsidian_glass",
+	"default:obsidian",
 	{cracky = 2, oddly_breakable_by_hand = 2, stone = 1},
 	{"default_obsidian_glass.png", "default_obsidian.png"},
-	"Obsidian Obsidian Glass",
+	S("Obsidian Obsidian Glass"),
 	default.node_sound_glass_defaults()
 )
 
-angledglass.register_glass("_obsidian_block_glass", "default:obsidian_block",
+angledglass.register_glass(
+	"_obsidian_block_glass",
+	"default:obsidian_block",
 	{cracky = 2, oddly_breakable_by_hand = 2, stone = 1},
 	{"default_glass.png", "default_obsidian_block.png"},
-	"Obsidian Block Glass",
+	S("Obsidian Block Glass"),
 	default.node_sound_glass_defaults()
 )
 
-angledglass.register_glass("_obsidian_block_obsidian_glass", "default:obsidian_block",
+angledglass.register_glass(
+	"_obsidian_block_obsidian_glass",
+	"default:obsidian_block",
 	{cracky = 2, oddly_breakable_by_hand = 2, stone = 1},
 	{"default_obsidian_glass.png", "default_obsidian_block.png"},
-	"Obsidian Block Obsidian Glass",
+	S("Obsidian Block Obsidian Glass"),
 	default.node_sound_glass_defaults()
 )
 
-angledglass.register_glass("_obsidian_brick_glass", "default:obsidian_brick",
+angledglass.register_glass(
+	"_obsidian_brick_glass",
+	"default:obsidian_brick",
 	{cracky = 2, oddly_breakable_by_hand = 2, stone = 1},
 	{"default_glass.png", "default_obsidian_brick.png"},
-	"Obsidian Brick Glass",
+	S("Obsidian Brick Glass"),
 	default.node_sound_glass_defaults()
 )
 
-angledglass.register_glass("_obsidian_brick_obsidian_glass", "default:obsidian_brick",
+angledglass.register_glass(
+	"_obsidian_brick_obsidian_glass",
+	"default:obsidian_brick",
 	{cracky = 2, oddly_breakable_by_hand = 2, stone = 1},
 	{"default_obsidian_glass.png", "default_obsidian_brick.png"},
-	"Obsidian Brick Obsidian Glass",
+	S("Obsidian Brick Obsidian Glass"),
 	default.node_sound_glass_defaults()
 )
 
-angledglass.register_glass("_obsidian_glass_glass", "default:obsidian_glass",
+angledglass.register_glass(
+	"_obsidian_glass_glass",
+	"default:obsidian_glass",
 	{cracky = 2, oddly_breakable_by_hand = 2, stone = 1},
 	{"default_glass.png", "default_obsidian_glass.png"},
-	"Obsidian Glass Glass",
+	S("Obsidian Glass Glass"),
 	default.node_sound_glass_defaults()
 )
 
-angledglass.register_glass("_obsidian_glass_obsidian_glass", "default:obsidian_glass",
+angledglass.register_glass(
+	"_obsidian_glass_obsidian_glass",
+	"default:obsidian_glass",
 	{cracky = 2, oddly_breakable_by_hand = 2, stone = 1},
 	{"default_obsidian_glass.png", "default_obsidian_glass.png"},
-	"Obsidian Glass Obsidian Glass",
+	S("Obsidian Glass Obsidian Glass"),
 	default.node_sound_glass_defaults()
 )
 
-angledglass.register_glass("_snow_glass", "default:snow",
+angledglass.register_glass(
+	"_snow_glass",
+	"default:snow",
 	{cracky = 2, oddly_breakable_by_hand = 2, stone = 1},
 	{"default_glass.png", "default_snow.png"},
-	"Snow Glass",
+	S("Snow Glass"),
 	default.node_sound_glass_defaults()
 )
 
-angledglass.register_glass("_snow_obsidian_glass", "default:snow",
+angledglass.register_glass(
+	"_snow_obsidian_glass",
+	"default:snow",
 	{cracky = 2, oddly_breakable_by_hand = 2, stone = 1},
 	{"default_obsidian_glass.png", "default_snow.png"},
-	"Snow Obsidian Glass",
+	S("Snow Obsidian Glass"),
 	default.node_sound_glass_defaults()
 )
 
-angledglass.register_glass("_ice_glass", "default:ice",
+angledglass.register_glass(
+	"_ice_glass",
+	"default:ice",
 	{cracky = 2, oddly_breakable_by_hand = 2, stone = 1},
 	{"default_glass.png", "default_ice.png"},
-	"Ice Glass",
+	S("Ice Glass"),
 	default.node_sound_glass_defaults()
 )
 
-angledglass.register_glass("_ice_obsidian_glass", "default:ice",
+angledglass.register_glass(
+	"_ice_obsidian_glass",
+	"default:ice",
 	{cracky = 2, oddly_breakable_by_hand = 2, stone = 1},
 	{"default_obsidian_glass.png", "default_ice.png"},
-	"Ice Obsidian Glass",
+	S("Ice Obsidian Glass"),
 	default.node_sound_glass_defaults()
 )

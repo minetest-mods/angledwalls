@@ -2,9 +2,10 @@
 
 angledwalls = {}
 
+local S = core.get_translator(core.get_current_modname())
+
 -- Angled place function
 -- To use put "on_place = angledwalls.angled_place" in the node def
-
 function angledwalls.angled_place(itemstack, placer, pointed_thing)
 	local placer_pos = placer:get_pos()
 	local pos = pointed_thing.above
@@ -37,7 +38,7 @@ local function fallback_fields(recipeitem, ndef)
 		paramtype2 = "facedir",
 		sunlight_propogates = true,
 		is_ground_content = false,
-		tiles             = rdef and rdef.tiles  and table.copy(rdef.tiles),
+		tiles = rdef and rdef.tiles and table.copy(rdef.tiles),
 		use_texture_alpha = rdef and rdef.use_texture_alpha or ALPHA_OPAQUE,
 		sounds            = rdef and rdef.sounds and table.copy(rdef.sounds),
 		groups            = rdef and rdef.groups and table.copy(rdef.groups) or {},
@@ -77,7 +78,7 @@ function angledwalls.register_angled_wall(subname, recipeitem, groups, images, d
 				{-0.0625, -0.5, -0.4375, 0.0625, 0.5, 0.4375},
 				{-0.375, -0.5, -0.125, 0.375, 0.5, 0.125},
 				{-0.4375, -0.5, -0.0625, 0.4375, 0.5, 0.0625},
-			}
+			},
 		},
 	})
 	ndef.groups.angledwall = 1
@@ -109,11 +110,11 @@ function angledwalls.register_low_angled_wall(subname, recipeitem, groups, image
 				{-0.0625, -0.5, -0.4375, 0.0625, 0, 0.4375},
 				{-0.375, -0.5, -0.125, 0.375, 0, 0.125},
 				{-0.4375, -0.5, -0.0625, 0.4375, 0, 0.062},
-			}
+			},
 		},
 		selection_box = {
 			type = "fixed",
-			fixed = {-0.5, -0.5, -0.5, 0.5, 0, 0.5}
+			fixed = {-0.5, -0.5, -0.5, 0.5, 0, 0.5},
 		},
 	})
 	ndef.groups.lowangledwall = 1
@@ -145,7 +146,7 @@ function angledwalls.register_corner(subname, recipeitem, groups, images, descri
 				{-0.0625, -0.5, -0.0625, 0.4375, 0.5, 0.4375},
 				{-0.25, -0.5, -0.3125, 0.1875, 0.5, 0.25},
 				{-0.5, -0.5, -0.25, 0.25, 0.5, 0.5},
-			}
+			},
 		},
 	})
 	ndef.groups.corner = 1
@@ -156,7 +157,16 @@ end
 -- Angled wall/low wall/corner registration function.
 -- Nodes will be called angledwalls:{angled_wall,low_angled_wall,corner}_<subname>
 
-function angledwalls.register_angled_wall_and_low_angled_wall_and_corner(subname, recipeitem, groups, images,desc_angled_wall, desc_low_angled_wall, desc_corner, sounds)
+function angledwalls.register_angled_wall_and_low_angled_wall_and_corner(
+	subname,
+	recipeitem,
+	groups,
+	images,
+	desc_angled_wall,
+	desc_low_angled_wall,
+	desc_corner,
+	sounds
+)
 	-- Convert "mod_name:node_name" to "node_name"
 	subname = subname or string.match(recipeitem, "^[%w_]+:(.+)$")
 
@@ -165,366 +175,445 @@ function angledwalls.register_angled_wall_and_low_angled_wall_and_corner(subname
 	angledwalls.register_corner(subname, recipeitem, groups, images, desc_corner, sounds)
 end
 
-
 -- Register angled walls and low angled walls and corner
 local register_all = angledwalls.register_angled_wall_and_low_angled_wall_and_corner
 
-register_all(nil, "default:acacia_wood",
+register_all(
+	nil,
+	"default:acacia_wood",
 	nil,
 	nil,
-	"Acacia Wood Angled Wall",
-	"Acacia Wood Low Angled Wall",
-	"Acacia Wood Corner",
+	S("Acacia Wood Angled Wall"),
+	S("Acacia Wood Low Angled Wall"),
+	S("Acacia Wood Corner"),
 	nil
 )
 
-register_all(nil, "default:aspen_wood",
+register_all(
+	nil,
+	"default:aspen_wood",
 	nil,
 	nil,
-	"Aspen Wood Angled Wall",
-	"Aspen Wood Low Angled Wall",
-	"Aspen Wood Corner",
+	S("Aspen Wood Angled Wall"),
+	S("Aspen Wood Low Angled Wall"),
+	S("Aspen Wood Corner"),
 	nil
 )
 
-register_all(nil, "default:junglewood",
+register_all(
+	nil,
+	"default:junglewood",
 	nil,
 	nil,
-	"Junglewood Angled Wall",
-	"Junglewood Low Angled Wall",
-	"junglewood Corner",
+	S("Junglewood Angled Wall"),
+	S("Junglewood Low Angled Wall"),
+	S("junglewood Corner"),
 	nil
 )
 
-register_all(nil, "default:pine_wood",
+register_all(
+	nil,
+	"default:pine_wood",
 	nil,
 	nil,
-	"Pine Wood Angled Wall",
-	"Pine Wood Low Angled Wall",
-	"Pine Wood Corner",
+	S("Pine Wood Angled Wall"),
+	S("Pine Wood Low Angled Wall"),
+	S("Pine Wood Corner"),
 	nil
 )
 
-register_all(nil, "default:wood",
+register_all(
+	nil,
+	"default:wood",
 	nil,
 	nil,
-	"Wooden Angled Wall",
-	"Wooden Low Angled Wall",
-	"Wooden Corner",
+	S("Wooden Angled Wall"),
+	S("Wooden Low Angled Wall"),
+	S("Wooden Corner"),
 	nil
 )
 
-register_all(nil, "default:brick",
+register_all(
+	nil,
+	"default:brick",
 	nil,
 	nil,
-	"Brick Angled Wall",
-	"Brick Low Angled Wall",
-	"Brick Corner",
+	S("Brick Angled Wall"),
+	S("Brick Low Angled Wall"),
+	S("Brick Corner"),
 	nil
 )
 
-register_all("bronze_block", "default:bronzeblock",
+register_all(
+	"bronze_block",
+	"default:bronzeblock",
 	nil,
 	nil,
-	"Bronze Block Angled Wall",
-	"Bronze Block Low Angled Wall",
-	"Bronze Block Corner",
+	S("Bronze Block Angled Wall"),
+	S("Bronze Block Low Angled Wall"),
+	S("Bronze Block Corner"),
 	nil
 )
 
-register_all(nil, "default:clay",
+register_all(
+	nil,
+	"default:clay",
 	nil,
 	nil,
-	"Clay Angled Wall",
-	"Clay Low Angled Wall",
-	"Clay Corner",
+	S("Clay Angled Wall"),
+	S("Clay Low Angled Wall"),
+	S("Clay Corner"),
 	nil
 )
 
-register_all("coal_block", "default:coalblock",
+register_all(
+	"coal_block",
+	"default:coalblock",
 	nil,
 	nil,
-	"Coal Block Angled Wall",
-	"Coal Block Low Angled Wall",
-	"Coal Block Corner",
+	S("Coal Block Angled Wall"),
+	S("Coal Block Low Angled Wall"),
+	S("Coal Block Corner"),
 	nil
 )
 
-register_all(nil, "default:copperblock",
+register_all(
+	nil,
+	"default:copperblock",
 	nil,
 	nil,
-	"Copper Block Angled Wall",
-	"Copper Block Low_angled Wall",
-	"Copper Block Corner",
+	S("Copper Block Angled Wall"),
+	S("Copper Block Low_angled Wall"),
+	S("Copper Block Corner"),
 	nil
 )
 
-register_all(nil, "default:diamondblock",
+register_all(
+	nil,
+	"default:diamondblock",
 	nil,
 	nil,
-	"Diamond Block Angled Wall",
-	"Diamond Block Low_angled Wall",
-	"Diamond Block Corner",
+	S("Diamond Block Angled Wall"),
+	S("Diamond Block Low_angled Wall"),
+	S("Diamond Block Corner"),
 	nil
 )
 
-register_all(nil, "default:goldblock",
+register_all(
+	nil,
+	"default:goldblock",
 	nil,
 	nil,
-	"Gold Block Angled Wall",
-	"Gold Block Low_angled Wall",
-	"Gold Block Corner",
+	S("Gold Block Angled Wall"),
+	S("Gold Block Low_angled Wall"),
+	S("Gold Block Corner"),
 	nil
 )
 
-register_all(nil, "default:meseblock",
+register_all(
+	nil,
+	"default:meseblock",
 	nil,
 	nil,
-	"Mese Block Angled Wall",
-	"Mese Block Low_angled Wall",
-	"Mese Block Corner",
+	S("Mese Block Angled Wall"),
+	S("Mese Block Low_angled Wall"),
+	S("Mese Block Corner"),
 	nil
 )
 
-register_all(nil, "default:steelblock",
+register_all(
+	nil,
+	"default:steelblock",
 	nil,
 	nil,
-	"Steel Block Angled Wall",
-	"Steel Block Low_angled Wall",
-	"Steel Block Corner",
+	S("Steel Block Angled Wall"),
+	S("Steel Block Low_angled Wall"),
+	S("Steel Block Corner"),
 	nil
 )
 
-register_all(nil, "default:tinblock",
+register_all(
+	nil,
+	"default:tinblock",
 	nil,
 	nil,
-	"Tin Block Angled Wall",
-	"Tin Block Low_angled Wall",
-	"Tin Block Corner",
+	S("Tin Block Angled Wall"),
+	S("Tin Block Low_angled Wall"),
+	S("Tin Block Corner"),
 	nil
 )
 
-register_all(nil, "default:cobble",
+register_all(
+	nil,
+	"default:cobble",
 	nil,
 	nil,
-	"Cobblestone Angled Wall",
-	"Cobblestone Low Angled Wall",
-	"Cobblestone Corner",
+	S("Cobblestone Angled Wall"),
+	S("Cobblestone Low Angled Wall"),
+	S("Cobblestone Corner"),
 	nil
 )
 
-register_all(nil, "default:mossycobble",
+register_all(
+	nil,
+	"default:mossycobble",
 	nil,
 	nil,
-	"Mossycobble Angled Wall",
-	"Mossycobble Low Angled Wall",
-	"Mossycobble Corner",
+	S("Mossycobble Angled Wall"),
+	S("Mossycobble Low Angled Wall"),
+	S("Mossycobble Corner"),
 	nil
 )
 
-register_all(nil, "default:stone",
+register_all(
+	nil,
+	"default:stone",
 	nil,
 	nil,
-	"Stone Angled Wall",
-	"Stone Low Angled Wall",
-	"Stone Corner",
+	S("Stone Angled Wall"),
+	S("Stone Low Angled Wall"),
+	S("Stone Corner"),
 	nil
 )
 
-register_all(nil, "default:stone_block",
+register_all(
+	nil,
+	"default:stone_block",
 	nil,
 	nil,
-	"Stone Block Angled Wall",
-	"Stone Block Low Angled Wall",
-	"Stone Block Corner",
+	S("Stone Block Angled Wall"),
+	S("Stone Block Low Angled Wall"),
+	S("Stone Block Corner"),
 	nil
 )
 
-register_all(nil, "default:stonebrick",
+register_all(
+	nil,
+	"default:stonebrick",
 	nil,
 	nil,
-	"Stone Brick Angled Wall",
-	"Stone Brick Low Angled Wall",
-	"Stone Brick Corner",
+	S("Stone Brick Angled Wall"),
+	S("Stone Brick Low Angled Wall"),
+	S("Stone Brick Corner"),
 	nil
 )
 
-register_all(nil, "default:desertscobble",
+register_all(
+	nil,
+	"default:desertscobble",
 	nil,
 	nil,
-	"Desert Cobble Angled Wall",
-	"Desert Cobble Low Angled Wall",
-	"Desert Cobble Corner",
+	S("Desert Cobble Angled Wall"),
+	S("Desert Cobble Low Angled Wall"),
+	S("Desert Cobble Corner"),
 	nil
 )
 
-register_all(nil, "default:desertstone",
+register_all(
+	nil,
+	"default:desertstone",
 	nil,
 	nil,
-	"Desert Stone Angled Wall",
-	"Desert Stone Low Angled Wall",
-	"Desert Stone Corner",
+	S("Desert Stone Angled Wall"),
+	S("Desert Stone Low Angled Wall"),
+	S("Desert Stone Corner"),
 	nil
 )
 
-register_all(nil, "default:desert_stone_block",
+register_all(
+	nil,
+	"default:desert_stone_block",
 	nil,
 	nil,
-	"Desert Stone Block Angled Wall",
-	"Desert Stone Block Low Angled Wall",
-	"Desert Stone Block Corner",
+	S("Desert Stone Block Angled Wall"),
+	S("Desert Stone Block Low Angled Wall"),
+	S("Desert Stone Block Corner"),
 	nil
 )
 
-register_all(nil, "default:desert_stonebrick",
+register_all(
+	nil,
+	"default:desert_stonebrick",
 	nil,
 	nil,
-	"Desert Stone Brick Angled Wall",
-	"Desert Stone Brick Low Angled Wall",
-	"Desert Stone Brick Corner",
+	S("Desert Stone Brick Angled Wall"),
+	S("Desert Stone Brick Low Angled Wall"),
+	S("Desert Stone Brick Corner"),
 	nil
 )
 
-register_all(nil, "default:desert_sandstone",
+register_all(
+	nil,
+	"default:desert_sandstone",
 	nil,
 	nil,
-	"Desert Sandstone Angled Wall",
-	"Desert Sandstone Low Angled Wall",
-	"Desert Sandstone Corner",
+	S("Desert Sandstone Angled Wall"),
+	S("Desert Sandstone Low Angled Wall"),
+	S("Desert Sandstone Corner"),
 	nil
 )
 
-register_all(nil, "default:desert_sandstone_block",
+register_all(
+	nil,
+	"default:desert_sandstone_block",
 	nil,
 	nil,
-	"Desert Sandstone Block Angled Wall",
-	"Desert Sandstone Block Low Angled Wall",
-	"Desert Sandstone Block Corner",
+	S("Desert Sandstone Block Angled Wall"),
+	S("Desert Sandstone Block Low Angled Wall"),
+	S("Desert Sandstone Block Corner"),
 	nil
 )
 
-register_all(nil, "default:desert_sandstone_brick",
+register_all(
+	nil,
+	"default:desert_sandstone_brick",
 	nil,
 	nil,
-	"Desert Sandstone Brick Angled Wall",
-	"Desert Sandstone Brick Low Angled Wall",
-	"Desert Sandstone Brick Corner",
+	S("Desert Sandstone Brick Angled Wall"),
+	S("Desert Sandstone Brick Low Angled Wall"),
+	S("Desert Sandstone Brick Corner"),
 	nil
 )
 
-register_all(nil, "default:sandstone",
+register_all(
+	nil,
+	"default:sandstone",
 	nil,
 	nil,
-	"Sandstone Angled Wall",
-	"Sandstone Low Angled Wall",
-	"Sandstone Corner",
+	S("Sandstone Angled Wall"),
+	S("Sandstone Low Angled Wall"),
+	S("Sandstone Corner"),
 	nil
 )
 
-register_all(nil, "default:sandstone_block",
+register_all(
+	nil,
+	"default:sandstone_block",
 	nil,
 	nil,
-	"Sandstone Block Angled Wall",
-	"Sandstone Block Low Angled Wall",
-	"Sandstone Block Corner",
+	S("Sandstone Block Angled Wall"),
+	S("Sandstone Block Low Angled Wall"),
+	S("Sandstone Block Corner"),
 	nil
 )
 
-register_all(nil, "default:sandstonebrick",
+register_all(
+	nil,
+	"default:sandstonebrick",
 	nil,
 	nil,
-	"Sandstone Brick Angled Wall",
-	"Sandstone Brick Low Angled Wall",
-	"Sandstone Brick Corner",
+	S("Sandstone Brick Angled Wall"),
+	S("Sandstone Brick Low Angled Wall"),
+	S("Sandstone Brick Corner"),
 	nil
 )
 
-register_all(nil, "default:silver_sandstone",
+register_all(
+	nil,
+	"default:silver_sandstone",
 	nil,
 	nil,
-	"Silver Sandstone Angled Wall",
-	"Silver Sandstone Low Angled Wall",
-	"Silver Sandstone Corner",
+	S("Silver Sandstone Angled Wall"),
+	S("Silver Sandstone Low Angled Wall"),
+	S("Silver Sandstone Corner"),
 	nil
 )
 
-register_all(nil, "default:silver_sandstone_block",
+register_all(
+	nil,
+	"default:silver_sandstone_block",
 	nil,
 	nil,
-	"Silver Sandstone Block Angled Wall",
-	"Silver Sandstone Block Low Angled Wall",
-	"Silver Sandstone Block Corner",
+	S("Silver Sandstone Block Angled Wall"),
+	S("Silver Sandstone Block Low Angled Wall"),
+	S("Silver Sandstone Block Corner"),
 	nil
 )
 
-register_all(nil, "default:silver_sandstone_brick",
+register_all(
+	nil,
+	"default:silver_sandstone_brick",
 	nil,
 	nil,
-	"Silver Sandstone Brick Angled Wall",
-	"Silver Sandstone Brick Low Angled Wall",
-	"Silver Sandstone Brick Corner",
+	S("Silver Sandstone Brick Angled Wall"),
+	S("Silver Sandstone Brick Low Angled Wall"),
+	S("Silver Sandstone Brick Corner"),
 	nil
 )
 
-register_all(nil, "default:obsidian",
+register_all(
+	nil,
+	"default:obsidian",
 	nil,
 	nil,
-	"Obsidian Angled Wall",
-	"Obsidian Low Angled Wall",
-	"Obsidian Corner",
+	S("Obsidian Angled Wall"),
+	S("Obsidian Low Angled Wall"),
+	S("Obsidian Corner"),
 	nil
 )
 
-register_all(nil, "default:obsidian_block",
+register_all(
+	nil,
+	"default:obsidian_block",
 	nil,
 	nil,
-	"Obsidian Block Angled Wall",
-	"Obsidian Block Low Angled Wall",
-	"Obsidian Block Corner",
+	S("Obsidian Block Angled Wall"),
+	S("Obsidian Block Low Angled Wall"),
+	S("Obsidian Block Corner"),
 	nil
 )
 
-register_all(nil, "default:obsidian_brick",
+register_all(
+	nil,
+	"default:obsidian_brick",
 	nil,
 	nil,
-	"Obsidian Brick Angled Wall",
-	"Obsidian Brick Low Angled Wall",
-	"Obsidian Brick Corner",
+	S("Obsidian Brick Angled Wall"),
+	S("Obsidian Brick Low Angled Wall"),
+	S("Obsidian Brick Corner"),
 	nil
 )
 
-register_all(nil, "default:glass",
+register_all(
+	nil,
+	"default:glass",
 	nil,
 	nil,
-	"Glass Angled Wall",
-	"Glass Low Angled Wall",
-	"Glass Corner",
+	S("Glass Angled Wall"),
+	S("Glass Low Angled Wall"),
+	S("Glass Corner"),
 	nil
 )
 
-register_all("obsidianglass", "default:obsidian_glass",
+register_all(
+	"obsidianglass",
+	"default:obsidian_glass",
 	nil,
 	nil,
-	"Obsidian Glass Angled Wall",
-	"Obsidian Glass Low Angled Wall",
-	"Obsidian Glass Corner",
+	S("Obsidian Glass Angled Wall"),
+	S("Obsidian Glass Low Angled Wall"),
+	S("Obsidian Glass Corner"),
 	nil
 )
 
-register_all(nil, "default:ice",
+register_all(
+	nil,
+	"default:ice",
 	nil,
 	nil,
-	"Ice Angled Wall",
-	"Ice Low Angled Wall",
-	"Ice Corner",
+	S("Ice Angled Wall"),
+	S("Ice Low Angled Wall"),
+	S("Ice Corner"),
 	nil
 )
 
-register_all(nil, "default:snow",
+register_all(
+	nil,
+	"default:snow",
 	nil,
 	nil,
-	"Snow Angled Wall",
-	"Snow Low Angled Wall",
-	"Snow Corner",
+	S("Snow Angled Wall"),
+	S("Snow Low Angled Wall"),
+	S("Snow Corner"),
 	nil
 )

@@ -1,348 +1,440 @@
 -- Register wall types
 
-angledwalls.register_angled_wall_and_low_angled_wall_and_corner("bakedclayblack", "bakedclay:bakedclay_black",
+local S = core.get_translator(core.get_current_modname())
+
+angledwalls.register_angled_wall_and_low_angled_wall_and_corner(
+	"bakedclayblack",
+	"bakedclay:bakedclay_black",
 	{snappy = 2, choppy = 2, oddly_breakable_by_hand = 2, flammable = 3},
 	{"baked_clay_black.png"},
-	"Baked Clay Black Angled Wall",
-	"Baked Clay Black Low Angled Wall",
-	"Baked Clay Black Corner",
+	S("Baked Clay Black Angled Wall"),
+	S("Baked Clay Black Low Angled Wall"),
+	S("Baked Clay Black Corner"),
 	default.node_sound_wood_defaults()
 )
 
-angledwalls.register_angled_wall_and_low_angled_wall_and_corner("bakedclayblue", "bakedclay:bakedclay_blue",
+angledwalls.register_angled_wall_and_low_angled_wall_and_corner(
+	"bakedclayblue",
+	"bakedclay:bakedclay_blue",
 	{snappy = 2, choppy = 2, oddly_breakable_by_hand = 2, flammable = 3},
 	{"baked_clay_blue.png"},
-	"Baked Clay Blue Angled Wall",
-	"Baked Clay Blue Low Angled Wall",
-	"Baked Clay Blue Corner",
+	S("Baked Clay Blue Angled Wall"),
+	S("Baked Clay Blue Low Angled Wall"),
+	S("Baked Clay Blue Corner"),
 	default.node_sound_wood_defaults()
 )
 
-angledwalls.register_angled_wall_and_low_angled_wall_and_corner("bakedclaybrown", "bakedclay:bakedclay_brown",
+angledwalls.register_angled_wall_and_low_angled_wall_and_corner(
+	"bakedclaybrown",
+	"bakedclay:bakedclay_brown",
 	{snappy = 2, choppy = 2, oddly_breakable_by_hand = 2, flammable = 3},
 	{"baked_clay_brown.png"},
-	"Baked Clay Brown Angled Wall",
-	"Baked Clay Brown Low Angled Wall",
-	"Baked Clay Brown Corner",
+	S("Baked Clay Brown Angled Wall"),
+	S("Baked Clay Brown Low Angled Wall"),
+	S("Baked Clay Brown Corner"),
 	default.node_sound_wood_defaults()
 )
 
-angledwalls.register_angled_wall_and_low_angled_wall_and_corner("bakedclaycyan", "bakedclay:bakedclay_cyan",
+angledwalls.register_angled_wall_and_low_angled_wall_and_corner(
+	"bakedclaycyan",
+	"bakedclay:bakedclay_cyan",
 	{snappy = 2, choppy = 2, oddly_breakable_by_hand = 2, flammable = 3},
 	{"baked_clay_cyan.png"},
-	"Baked Clay Cyan Angled Wall",
-	"Baked Clay Cyan Low Angled Wall",
-	"Baked Clay Cyan Corner",
+	S("Baked Clay Cyan Angled Wall"),
+	S("Baked Clay Cyan Low Angled Wall"),
+	S("Baked Clay Cyan Corner"),
 	default.node_sound_wood_defaults()
 )
 
-angledwalls.register_angled_wall_and_low_angled_wall_and_corner("bakedclaydarkgreen", "bakedclay:bakedclay_dark_green",
+angledwalls.register_angled_wall_and_low_angled_wall_and_corner(
+	"bakedclaydarkgreen",
+	"bakedclay:bakedclay_dark_green",
 	{snappy = 2, choppy = 2, oddly_breakable_by_hand = 2, flammable = 3},
 	{"baked_clay_dark_green.png"},
-	"Baked Clay Dark Green Angled Wall",
-	"Baked Clay Dark Green Low Angled Wall",
-	"Baked Clay Dark Green Angled Wall",
+	S("Baked Clay Dark Green Angled Wall"),
+	S("Baked Clay Dark Green Low Angled Wall"),
+	S("Baked Clay Dark Green Corner"),
 	default.node_sound_wood_defaults()
 )
 
-angledwalls.register_angled_wall_and_low_angled_wall_and_corner("bakedclaydarkgrey", "bakedclay:bakedclay_dark_grey",
+angledwalls.register_angled_wall_and_low_angled_wall_and_corner(
+	"bakedclaydarkgrey",
+	"bakedclay:bakedclay_dark_grey",
 	{snappy = 2, choppy = 2, oddly_breakable_by_hand = 2, flammable = 3},
 	{"baked_clay_dark_grey.png"},
-	"Baked Clay Dark Grey Angled Wall",
-	"Baked Clay Dark Grey Low Angled Wall",
-	"Baked Clay Dark Grey Corner",
+	S("Baked Clay Dark Grey Angled Wall"),
+	S("Baked Clay Dark Grey Low Angled Wall"),
+	S("Baked Clay Dark Grey Corner"),
 	default.node_sound_wood_defaults()
 )
 
-angledwalls.register_angled_wall_and_low_angled_wall_and_corner("bakedclaygreen", "bakedclay:bakedclay_green",
+angledwalls.register_angled_wall_and_low_angled_wall_and_corner(
+	"bakedclaygreen",
+	"bakedclay:bakedclay_green",
 	{snappy = 2, choppy = 2, oddly_breakable_by_hand = 2, flammable = 3},
 	{"baked_clay_green.png"},
-	"Baked Clay Green Angled Wall",
-	"Baked Clay Green Low Angled Wall",
-	"Baked Clay Green Corner",
+	S("Baked Clay Green Angled Wall"),
+	S("Baked Clay Green Low Angled Wall"),
+	S("Baked Clay Green Corner"),
 	default.node_sound_wood_defaults()
 )
 
-angledwalls.register_angled_wall_and_low_angled_wall_and_corner("bakedclaygrey", "bakedclay:bakedclay_grey",
+angledwalls.register_angled_wall_and_low_angled_wall_and_corner(
+	"bakedclaygrey",
+	"bakedclay:bakedclay_grey",
 	{snappy = 2, choppy = 2, oddly_breakable_by_hand = 2, flammable = 3},
 	{"baked_clay_grey.png"},
-	"Baked Clay Grey Angled Wall",
-	"Baked Clay Grey Low Angled Wall",
-	"Baked Clay Grey Corner",
+	S("Baked Clay Grey Angled Wall"),
+	S("Baked Clay Grey Low Angled Wall"),
+	S("Baked Clay Grey Corner"),
 	default.node_sound_wood_defaults()
 )
 
-angledwalls.register_angled_wall_and_low_angled_wall_and_corner("bakedclaymagenta", "bakedclay:bakedclay_magenta",
+angledwalls.register_angled_wall_and_low_angled_wall_and_corner(
+	"bakedclaymagenta",
+	"bakedclay:bakedclay_magenta",
 	{snappy = 2, choppy = 2, oddly_breakable_by_hand = 2, flammable = 3},
 	{"baked_clay_magenta.png"},
-	"Baked Clay Magenta Angled Wall",
-	"Baked Clay Magenta Low Angled Wall",
-	"Baked Clay Magenta Corner",
+	S("Baked Clay Magenta Angled Wall"),
+	S("Baked Clay Magenta Low Angled Wall"),
+	S("Baked Clay Magenta Corner"),
 	default.node_sound_wood_defaults()
 )
 
-angledwalls.register_angled_wall_and_low_angled_wall_and_corner("bakedclayorange", "bakedclay:bakedclay_orange",
+angledwalls.register_angled_wall_and_low_angled_wall_and_corner(
+	"bakedclayorange",
+	"bakedclay:bakedclay_orange",
 	{snappy = 2, choppy = 2, oddly_breakable_by_hand = 2, flammable = 3},
 	{"baked_clay_orange.png"},
-	"Baked Clay Orange Angled Wall",
-	"Baked Clay Orange Low Angled Wall",
-	"Baked Clay Orange Corner",
+	S("Baked Clay Orange Angled Wall"),
+	S("Baked Clay Orange Low Angled Wall"),
+	S("Baked Clay Orange Corner"),
 	default.node_sound_wood_defaults()
 )
 
-angledwalls.register_angled_wall_and_low_angled_wall_and_corner("bakedclaypink", "bakedclay:bakedclay_pink",
+angledwalls.register_angled_wall_and_low_angled_wall_and_corner(
+	"bakedclaypink",
+	"bakedclay:bakedclay_pink",
 	{snappy = 2, choppy = 2, oddly_breakable_by_hand = 2, flammable = 3},
 	{"baked_clay_pink.png"},
-	"Baked Clay Pink Angled Wall",
-	"Baked Clay Pink Low Angled Wall",
-	"Baked Clay Pink Corner",
+	S("Baked Clay Pink Angled Wall"),
+	S("Baked Clay Pink Low Angled Wall"),
+	S("Baked Clay Pink Corner"),
 	default.node_sound_wood_defaults()
 )
 
-angledwalls.register_angled_wall_and_low_angled_wall_and_corner("bakedclayred", "bakedclay:bakedclay_red",
+angledwalls.register_angled_wall_and_low_angled_wall_and_corner(
+	"bakedclayred",
+	"bakedclay:bakedclay_red",
 	{snappy = 2, choppy = 2, oddly_breakable_by_hand = 2, flammable = 3},
 	{"baked_clay_red.png"},
-	"Baked Clay Red Angled Wall",
-	"Baked Clay Red Low Angled Wall",
-	"Baked Clay Red Corner",
+	S("Baked Clay Red Angled Wall"),
+	S("Baked Clay Red Low Angled Wall"),
+	S("Baked Clay Red Corner"),
 	default.node_sound_wood_defaults()
 )
 
-angledwalls.register_angled_wall_and_low_angled_wall_and_corner("bakedclayviolet", "bakedclay:bakedclay_violet",
+angledwalls.register_angled_wall_and_low_angled_wall_and_corner(
+	"bakedclayviolet",
+	"bakedclay:bakedclay_violet",
 	{snappy = 2, choppy = 2, oddly_breakable_by_hand = 2, flammable = 3},
 	{"baked_clay_violet.png"},
-	"Baked Clay Violet Angled Wall",
-	"Baked Clay Violet Low Angled Wall",
-	"Baked Clay Violet Corner",
+	S("Baked Clay Violet Angled Wall"),
+	S("Baked Clay Violet Low Angled Wall"),
+	S("Baked Clay Violet Corner"),
 	default.node_sound_wood_defaults()
 )
 
-angledwalls.register_angled_wall_and_low_angled_wall_and_corner("bakedclaywhite", "bakedclay:bakedclay_white",
+angledwalls.register_angled_wall_and_low_angled_wall_and_corner(
+	"bakedclaywhite",
+	"bakedclay:bakedclay_white",
 	{snappy = 2, choppy = 2, oddly_breakable_by_hand = 2, flammable = 3},
 	{"baked_clay_white.png"},
-	"Baked Clay White Angled Wall",
-	"Baked Clay White Low Angled Wall",
-	"Baked Clay White Corner",
+	S("Baked Clay White Angled Wall"),
+	S("Baked Clay White Low Angled Wall"),
+	S("Baked Clay White Corner"),
 	default.node_sound_wood_defaults()
 )
 
-angledwalls.register_angled_wall_and_low_angled_wall_and_corner("bakedclayyellow", "bakedclay:bakedclay_yellow",
+angledwalls.register_angled_wall_and_low_angled_wall_and_corner(
+	"bakedclayyellow",
+	"bakedclay:bakedclay_yellow",
 	{snappy = 2, choppy = 2, oddly_breakable_by_hand = 2, flammable = 3},
 	{"baked_clay_yellow.png"},
-	"Baked Clay Yellow Angled Wall",
-	"Baked Clay Yellow Low Angled Wall",
-	"Baked Clay Yellow Corner",
+	S("Baked Clay Yellow Angled Wall"),
+	S("Baked Clay Yellow Low Angled Wall"),
+	S("Baked Clay Yellow Corner"),
 	default.node_sound_wood_defaults()
 )
 
 -- Register glass types
 
-angledglass.register_glass("_bakedclay_black_glass", "bakedclay:bakedclay_black",
+angledglass.register_glass(
+	"_bakedclay_black_glass",
+	"bakedclay:bakedclay_black",
 	{choppy = 2, oddly_breakable_by_hand = 2, flammable = 3, wood = 1},
 	{"default_glass.png", "baked_clay_black.png"},
-	"Baked Clay Black Glass",
+	S("Baked Clay Black Glass"),
 	default.node_sound_glass_defaults()
 )
 
-angledglass.register_glass("_bakedclay_black_obsidian_glass", "bakedclay:bakedclay_black",
+angledglass.register_glass(
+	"_bakedclay_black_obsidian_glass",
+	"bakedclay:bakedclay_black",
 	{choppy = 2, oddly_breakable_by_hand = 2, flammable = 3, wood = 1},
 	{"default_obsidian_glass.png", "baked_clay_black.png"},
-	"Baked Clay Black Obsidian Glass",
+	S("Baked Clay Black Obsidian Glass"),
 	default.node_sound_glass_defaults()
 )
 
-angledglass.register_glass("_bakedclay_blue_glass", "bakedclay:bakedclay_blue",
+angledglass.register_glass(
+	"_bakedclay_blue_glass",
+	"bakedclay:bakedclay_blue",
 	{choppy = 2, oddly_breakable_by_hand = 2, flammable = 3, wood = 1},
 	{"default_glass.png", "baked_clay_blue.png"},
-	"Baked Clay Blue Glass",
+	S("Baked Clay Blue Glass"),
 	default.node_sound_glass_defaults()
 )
 
-angledglass.register_glass("_bakedclay_blue_obsidian_glass", "bakedclay:bakedclay_blue",
+angledglass.register_glass(
+	"_bakedclay_blue_obsidian_glass",
+	"bakedclay:bakedclay_blue",
 	{choppy = 2, oddly_breakable_by_hand = 2, flammable = 3, wood = 1},
 	{"default_obsidian_glass.png", "baked_clay_blue.png"},
-	"Baked Clay Blue Obsidian Glass",
+	S("Baked Clay Blue Obsidian Glass"),
 	default.node_sound_glass_defaults()
 )
 
-angledglass.register_glass("_bakedclay_brown_glass", "bakedclay:bakedclay_brown",
+angledglass.register_glass(
+	"_bakedclay_brown_glass",
+	"bakedclay:bakedclay_brown",
 	{choppy = 2, oddly_breakable_by_hand = 2, flammable = 3, wood = 1},
 	{"default_glass.png", "baked_clay_brown.png"},
-	"Baked Clay Brown Glass",
+	S("Baked Clay Brown Glass"),
 	default.node_sound_glass_defaults()
 )
 
-angledglass.register_glass("_bakedclay_brown_obsidian_glass", "bakedclay:bakedclay_brown",
+angledglass.register_glass(
+	"_bakedclay_brown_obsidian_glass",
+	"bakedclay:bakedclay_brown",
 	{choppy = 2, oddly_breakable_by_hand = 2, flammable = 3, wood = 1},
 	{"default_obsidian_glass.png", "baked_clay_brown.png"},
-	"Baked Clay Brown Obsidian Glass",
+	S("Baked Clay Brown Obsidian Glass"),
 	default.node_sound_glass_defaults()
 )
 
-angledglass.register_glass("_bakedclay_cyan_glass", "bakedclay:bakedclay_cyan",
+angledglass.register_glass(
+	"_bakedclay_cyan_glass",
+	"bakedclay:bakedclay_cyan",
 	{choppy = 2, oddly_breakable_by_hand = 2, flammable = 3, wood = 1},
 	{"default_glass.png", "baked_clay_cyan.png"},
-	"Baked Clay Cyan Glass",
+	S("Baked Clay Cyan Glass"),
 	default.node_sound_glass_defaults()
 )
 
-angledglass.register_glass("_bakedclay_cyan_obsidian_glass", "bakedclay:bakedclay_cyan",
+angledglass.register_glass(
+	"_bakedclay_cyan_obsidian_glass",
+	"bakedclay:bakedclay_cyan",
 	{choppy = 2, oddly_breakable_by_hand = 2, flammable = 3, wood = 1},
 	{"default_obsidian_glass.png", "baked_clay_cyan.png"},
-	"Baked Clay Cyan Obsidian Glass",
+	S("Baked Clay Cyan Obsidian Glass"),
 	default.node_sound_glass_defaults()
 )
 
-angledglass.register_glass("_bakedclay_dark_green_glass", "bakedclay:bakedclay_dark_green",
+angledglass.register_glass(
+	"_bakedclay_dark_green_glass",
+	"bakedclay:bakedclay_dark_green",
 	{choppy = 2, oddly_breakable_by_hand = 2, flammable = 3, wood = 1},
 	{"default_glass.png", "baked_clay_dark_green.png"},
-	"Baked Clay Dark Green Glass",
+	S("Baked Clay Dark Green Glass"),
 	default.node_sound_glass_defaults()
 )
 
-angledglass.register_glass("_bakedclay_dark_green_obsidian_glass", "bakedclay:bakedclay_dark_green",
+angledglass.register_glass(
+	"_bakedclay_dark_green_obsidian_glass",
+	"bakedclay:bakedclay_dark_green",
 	{choppy = 2, oddly_breakable_by_hand = 2, flammable = 3, wood = 1},
 	{"default_obsidian_glass.png", "baked_clay_dark_green.png"},
-	"Baked Clay Dark Green Obsidian Glass",
+	S("Baked Clay Dark Green Obsidian Glass"),
 	default.node_sound_glass_defaults()
 )
 
-angledglass.register_glass("_bakedclay_dark_grey_glass", "bakedclay:bakedclay_dark_grey",
+angledglass.register_glass(
+	"_bakedclay_dark_grey_glass",
+	"bakedclay:bakedclay_dark_grey",
 	{choppy = 2, oddly_breakable_by_hand = 2, flammable = 3, wood = 1},
 	{"default_glass.png", "baked_clay_dark_grey.png"},
-	"Baked Clay Dark Grey Glass",
+	S("Baked Clay Dark Grey Glass"),
 	default.node_sound_glass_defaults()
 )
 
-angledglass.register_glass("_bakedclay_dark_grey_obsidian_glass", "bakedclay:bakedclay_dark_grey",
+angledglass.register_glass(
+	"_bakedclay_dark_grey_obsidian_glass",
+	"bakedclay:bakedclay_dark_grey",
 	{choppy = 2, oddly_breakable_by_hand = 2, flammable = 3, wood = 1},
 	{"default_obsidian_glass.png", "baked_clay_dark_grey.png"},
-	"Baked Clay Dark Grey Obsidian Glass",
+	S("Baked Clay Dark Grey Obsidian Glass"),
 	default.node_sound_glass_defaults()
 )
 
-angledglass.register_glass("_bakedclay_green_glass", "bakedclay:bakedclay_green",
+angledglass.register_glass(
+	"_bakedclay_green_glass",
+	"bakedclay:bakedclay_green",
 	{choppy = 2, oddly_breakable_by_hand = 2, flammable = 3, wood = 1},
 	{"default_glass.png", "baked_clay_green.png"},
-	"Baked Clay Green Glass",
+	S("Baked Clay Green Glass"),
 	default.node_sound_glass_defaults()
 )
 
-angledglass.register_glass("_bakedclay_green_obsidian_glass", "bakedclay:bakedclay_green",
+angledglass.register_glass(
+	"_bakedclay_green_obsidian_glass",
+	"bakedclay:bakedclay_green",
 	{choppy = 2, oddly_breakable_by_hand = 2, flammable = 3, wood = 1},
 	{"default_obsidian_glass.png", "baked_clay_green.png"},
-	"Baked Clay Green Obsidian Glass",
+	S("Baked Clay Green Obsidian Glass"),
 	default.node_sound_glass_defaults()
 )
 
-angledglass.register_glass("_bakedclay_grey_glass", "bakedclay:bakedclay_grey",
+angledglass.register_glass(
+	"_bakedclay_grey_glass",
+	"bakedclay:bakedclay_grey",
 	{choppy = 2, oddly_breakable_by_hand = 2, flammable = 3, wood = 1},
 	{"default_glass.png", "baked_clay_grey.png"},
-	"Baked Clay Grey Glass",
+	S("Baked Clay Grey Glass"),
 	default.node_sound_glass_defaults()
 )
 
-angledglass.register_glass("_bakedclay_grey_obsidian_glass", "bakedclay:bakedclay_grey",
+angledglass.register_glass(
+	"_bakedclay_grey_obsidian_glass",
+	"bakedclay:bakedclay_grey",
 	{choppy = 2, oddly_breakable_by_hand = 2, flammable = 3, wood = 1},
 	{"default_obsidian_glass.png", "baked_clay_grey.png"},
-	"Baked Clay Grey Obsidian Glass",
+	S("Baked Clay Grey Obsidian Glass"),
 	default.node_sound_glass_defaults()
 )
 
-angledglass.register_glass("_bakedclay_magenta_glass", "bakedclay:bakedclay_magenta",
+angledglass.register_glass(
+	"_bakedclay_magenta_glass",
+	"bakedclay:bakedclay_magenta",
 	{choppy = 2, oddly_breakable_by_hand = 2, flammable = 3, wood = 1},
 	{"default_glass.png", "baked_clay_magenta.png"},
-	"Baked Clay Magenta Glass",
+	S("Baked Clay Magenta Glass"),
 	default.node_sound_glass_defaults()
 )
 
-angledglass.register_glass("_bakedclay_magenta_obsidian_glass", "bakedclay:bakedclay_magenta",
+angledglass.register_glass(
+	"_bakedclay_magenta_obsidian_glass",
+	"bakedclay:bakedclay_magenta",
 	{choppy = 2, oddly_breakable_by_hand = 2, flammable = 3, wood = 1},
 	{"default_obsidian_glass.png", "baked_clay_magenta.png"},
-	"Baked Clay Magenta Obsidian Glass",
+	S("Baked Clay Magenta Obsidian Glass"),
 	default.node_sound_glass_defaults()
 )
 
-angledglass.register_glass("_bakedclay_orange_glass", "bakedclay:bakedclay_orange",
+angledglass.register_glass(
+	"_bakedclay_orange_glass",
+	"bakedclay:bakedclay_orange",
 	{choppy = 2, oddly_breakable_by_hand = 2, flammable = 3, wood = 1},
 	{"default_glass.png", "baked_clay_orange.png"},
-	"Baked Clay Orange Glass",
+	S("Baked Clay Orange Glass"),
 	default.node_sound_glass_defaults()
 )
 
-angledglass.register_glass("_bakedclay_orange_obsidian_glass", "bakedclay:bakedclay_orange",
+angledglass.register_glass(
+	"_bakedclay_orange_obsidian_glass",
+	"bakedclay:bakedclay_orange",
 	{choppy = 2, oddly_breakable_by_hand = 2, flammable = 3, wood = 1},
 	{"default_obsidian_glass.png", "baked_clay_orange.png"},
-	"Baked Clay Orange Obsidian Glass",
+	S("Baked Clay Orange Obsidian Glass"),
 	default.node_sound_glass_defaults()
 )
 
-angledglass.register_glass("_bakedclay_pink_glass", "bakedclay:bakedclay_pink",
+angledglass.register_glass(
+	"_bakedclay_pink_glass",
+	"bakedclay:bakedclay_pink",
 	{choppy = 2, oddly_breakable_by_hand = 2, flammable = 3, wood = 1},
 	{"default_glass.png", "baked_clay_pink.png"},
-	"Baked Clay Pink Glass",
+	S("Baked Clay Pink Glass"),
 	default.node_sound_glass_defaults()
 )
 
-angledglass.register_glass("_bakedclay_pink_obsidian_glass", "bakedclay:bakedclay_pink",
+angledglass.register_glass(
+	"_bakedclay_pink_obsidian_glass",
+	"bakedclay:bakedclay_pink",
 	{choppy = 2, oddly_breakable_by_hand = 2, flammable = 3, wood = 1},
 	{"default_obsidian_glass.png", "baked_clay_pink.png"},
-	"Baked Clay Pink Obsidian Glass",
+	S("Baked Clay Pink Obsidian Glass"),
 	default.node_sound_glass_defaults()
 )
 
-angledglass.register_glass("_bakedclay_red_glass", "bakedclay:bakedclay_red",
+angledglass.register_glass(
+	"_bakedclay_red_glass",
+	"bakedclay:bakedclay_red",
 	{choppy = 2, oddly_breakable_by_hand = 2, flammable = 3, wood = 1},
 	{"default_glass.png", "baked_clay_red.png"},
-	"Baked Clay Red Glass",
+	S("Baked Clay Red Glass"),
 	default.node_sound_glass_defaults()
 )
 
-angledglass.register_glass("_bakedclay_red_obsidian_glass", "bakedclay:bakedclay_red",
+angledglass.register_glass(
+	"_bakedclay_red_obsidian_glass",
+	"bakedclay:bakedclay_red",
 	{choppy = 2, oddly_breakable_by_hand = 2, flammable = 3, wood = 1},
 	{"default_obsidian_glass.png", "baked_clay_red.png"},
-	"Baked Clay Red Obsidian Glass",
+	S("Baked Clay Red Obsidian Glass"),
 	default.node_sound_glass_defaults()
 )
 
-angledglass.register_glass("_bakedclay_violet_glass", "bakedclay:bakedclay_violet",
+angledglass.register_glass(
+	"_bakedclay_violet_glass",
+	"bakedclay:bakedclay_violet",
 	{choppy = 2, oddly_breakable_by_hand = 2, flammable = 3, wood = 1},
 	{"default_glass.png", "baked_clay_violet.png"},
-	"Baked Clay Violet Glass",
+	S("Baked Clay Violet Glass"),
 	default.node_sound_glass_defaults()
 )
 
-angledglass.register_glass("_bakedclay_violet_obsidian_glass", "bakedclay:bakedclay_violet",
+angledglass.register_glass(
+	"_bakedclay_violet_obsidian_glass",
+	"bakedclay:bakedclay_violet",
 	{choppy = 2, oddly_breakable_by_hand = 2, flammable = 3, wood = 1},
 	{"default_obsidian_glass.png", "baked_clay_violet.png"},
-	"Baked Clay Violet Obsidian Glass",
+	S("Baked Clay Violet Obsidian Glass"),
 	default.node_sound_glass_defaults()
 )
 
-angledglass.register_glass("_bakedclay_white_glass", "bakedclay:bakedclay_white",
+angledglass.register_glass(
+	"_bakedclay_white_glass",
+	"bakedclay:bakedclay_white",
 	{choppy = 2, oddly_breakable_by_hand = 2, flammable = 3, wood = 1},
 	{"default_glass.png", "baked_clay_white.png"},
-	"Baked Clay White Glass",
+	S("Baked Clay White Glass"),
 	default.node_sound_glass_defaults()
 )
 
-angledglass.register_glass("_bakedclay_white_obsidian_glass", "bakedclay:bakedclay_white",
+angledglass.register_glass(
+	"_bakedclay_white_obsidian_glass",
+	"bakedclay:bakedclay_white",
 	{choppy = 2, oddly_breakable_by_hand = 2, flammable = 3, wood = 1},
 	{"default_obsidian_glass.png", "baked_clay_white.png"},
-	"Baked Clay White Obsidian Glass",
+	S("Baked Clay White Obsidian Glass"),
 	default.node_sound_glass_defaults()
 )
 
-angledglass.register_glass("_bakedclay_yellow_glass", "bakedclay:bakedclay_yellow",
+angledglass.register_glass(
+	"_bakedclay_yellow_glass",
+	"bakedclay:bakedclay_yellow",
 	{choppy = 2, oddly_breakable_by_hand = 2, flammable = 3, wood = 1},
 	{"default_glass.png", "baked_clay_yellow.png"},
-	"Baked Clay Yellow Glass",
+	S("Baked Clay Yellow Glass"),
 	default.node_sound_glass_defaults()
 )
 
-angledglass.register_glass("_bakedclay_yellow_obsidian_glass", "bakedclay:bakedclay_yellow",
+angledglass.register_glass(
+	"_bakedclay_yellow_obsidian_glass",
+	"bakedclay:bakedclay_yellow",
 	{choppy = 2, oddly_breakable_by_hand = 2, flammable = 3, wood = 1},
 	{"default_obsidian_glass.png", "baked_clay_yellow.png"},
-	"Baked Clay Yellow Obsidian Glass",
+	S("Baked Clay Yellow Obsidian Glass"),
 	default.node_sound_glass_defaults()
 )
