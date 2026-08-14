@@ -1,0 +1,1310 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-08-14 16:27-0500\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: adoors.lua:12
+msgid "Steel"
+msgstr ""
+
+#: adoors.lua:22
+msgid "Glass"
+msgstr ""
+
+#: adoors.lua:32 angledglass.lua:690
+msgid "Obsidian Glass"
+msgstr ""
+
+#: adoors.lua:42
+msgid "Wood"
+msgstr ""
+
+#: adoors.lua:63
+msgid "@1 Door (left)"
+msgstr ""
+
+#: adoors.lua:156
+msgid "@1 Door (right)"
+msgstr ""
+
+#: angledglass.lua:78
+msgid "Acacia Wood Glass"
+msgstr ""
+
+#: angledglass.lua:87
+msgid "Acacia Wood Obsidian Glass"
+msgstr ""
+
+#: angledglass.lua:96 angledglass.lua:105
+msgid "Aspen Wood Glass"
+msgstr ""
+
+#: angledglass.lua:114 angledglass.lua:123
+msgid "Junglewood Glass"
+msgstr ""
+
+#: angledglass.lua:132 angledglass.lua:141
+msgid "Pine Wood Glass"
+msgstr ""
+
+#: angledglass.lua:150
+msgid "Wooden Glass"
+msgstr ""
+
+#: angledglass.lua:159
+msgid "Wooden Obsidian Glass"
+msgstr ""
+
+#: angledglass.lua:168
+msgid "Brick Glass"
+msgstr ""
+
+#: angledglass.lua:177
+msgid "Brick Obsidian Glass"
+msgstr ""
+
+#: angledglass.lua:186
+msgid "Cobble Glass"
+msgstr ""
+
+#: angledglass.lua:195
+msgid "Cobble Obsidian Glass"
+msgstr ""
+
+#: angledglass.lua:204
+msgid "Mossycobble Glass"
+msgstr ""
+
+#: angledglass.lua:213
+msgid "Mossycobble Obsidian Glass"
+msgstr ""
+
+#: angledglass.lua:222
+msgid "Stone Glass"
+msgstr ""
+
+#: angledglass.lua:231
+msgid "Stone Obsidian Glass"
+msgstr ""
+
+#: angledglass.lua:240
+msgid "Stone Block Glass"
+msgstr ""
+
+#: angledglass.lua:249
+msgid "Stone Block Obsidian Glass"
+msgstr ""
+
+#: angledglass.lua:258
+msgid "Stone Brick Glass"
+msgstr ""
+
+#: angledglass.lua:267
+msgid "Stone Brick Obsidian Glass"
+msgstr ""
+
+#: angledglass.lua:276
+msgid "Desert Cobble Glass"
+msgstr ""
+
+#: angledglass.lua:285
+msgid "Desert Cobble Obsidian Glass"
+msgstr ""
+
+#: angledglass.lua:294
+msgid "Desert Stone Glass"
+msgstr ""
+
+#: angledglass.lua:303
+msgid "Desert Stone Obsidian Glass"
+msgstr ""
+
+#: angledglass.lua:312
+msgid "Desert Stone Block Glass"
+msgstr ""
+
+#: angledglass.lua:321
+msgid "Desert Stone Block Obsidian Glass"
+msgstr ""
+
+#: angledglass.lua:330
+msgid "Desert Stone Brick Glass"
+msgstr ""
+
+#: angledglass.lua:339
+msgid "Desert Stone Brick Obsidian Glass"
+msgstr ""
+
+#: angledglass.lua:348
+msgid "Desert Sandstone Glass"
+msgstr ""
+
+#: angledglass.lua:357
+msgid "Desert Sandstone Obsidian Glass"
+msgstr ""
+
+#: angledglass.lua:366
+msgid "Desert Sandstone Block Glass"
+msgstr ""
+
+#: angledglass.lua:375
+msgid "Desert Sandstone Block Obsidian Glass"
+msgstr ""
+
+#: angledglass.lua:384
+msgid "Desert Sandstone Brick Glass"
+msgstr ""
+
+#: angledglass.lua:393
+msgid "Desert Sandstone Brick Obsidian Glass"
+msgstr ""
+
+#: angledglass.lua:402
+msgid "Sandstone Glass"
+msgstr ""
+
+#: angledglass.lua:411
+msgid "Sandstone Obsidian Glass"
+msgstr ""
+
+#: angledglass.lua:420
+msgid "Sandstone Block Glass"
+msgstr ""
+
+#: angledglass.lua:429
+msgid "Sandstone Block Obsidian Glass"
+msgstr ""
+
+#: angledglass.lua:438
+msgid "Sandstone Brick Glass"
+msgstr ""
+
+#: angledglass.lua:447
+msgid "Sandstone Brick Obsidian Glass"
+msgstr ""
+
+#: angledglass.lua:456
+msgid "Silver Sandstone Glass"
+msgstr ""
+
+#: angledglass.lua:465
+msgid "Silver Sandstone Obsidian Glass"
+msgstr ""
+
+#: angledglass.lua:474
+msgid "Silver Sandstone Block Glass"
+msgstr ""
+
+#: angledglass.lua:483
+msgid "Silver Sandstone Block Obsidian Glass"
+msgstr ""
+
+#: angledglass.lua:492
+msgid "Silver Sandstone Brick Glass"
+msgstr ""
+
+#: angledglass.lua:501
+msgid "Silver Sandstone Brick Obsidian Glass"
+msgstr ""
+
+#: angledglass.lua:510
+msgid "Bronze Block Glass"
+msgstr ""
+
+#: angledglass.lua:519
+msgid "Bronze Block Obsidian Glass"
+msgstr ""
+
+#: angledglass.lua:528
+msgid "Clay Glass"
+msgstr ""
+
+#: angledglass.lua:537
+msgid "Clay Obsidian Glass"
+msgstr ""
+
+#: angledglass.lua:546
+msgid "Coal Block Glass"
+msgstr ""
+
+#: angledglass.lua:555
+msgid "Coal Block Obsidian Glass"
+msgstr ""
+
+#: angledglass.lua:564
+msgid "Copper Block Glass"
+msgstr ""
+
+#: angledglass.lua:573
+msgid "Copper Block Obsidian Glass"
+msgstr ""
+
+#: angledglass.lua:582
+msgid "Diamond Block Glass"
+msgstr ""
+
+#: angledglass.lua:591
+msgid "Diamond Block Obsidian Glass"
+msgstr ""
+
+#: angledglass.lua:600
+msgid "Gold Block Glass"
+msgstr ""
+
+#: angledglass.lua:609
+msgid "Gold Block Obsidian Glass"
+msgstr ""
+
+#: angledglass.lua:618
+msgid "Mese Block Glass"
+msgstr ""
+
+#: angledglass.lua:627
+msgid "Mese Block Obsidian Glass"
+msgstr ""
+
+#: angledglass.lua:636
+msgid "Steel Block Glass"
+msgstr ""
+
+#: angledglass.lua:645
+msgid "Steel Block Obsidian Glass"
+msgstr ""
+
+#: angledglass.lua:654
+msgid "Tin Block Glass"
+msgstr ""
+
+#: angledglass.lua:663
+msgid "Tin Block Obsidian Glass"
+msgstr ""
+
+#: angledglass.lua:672
+msgid "Glass Glass"
+msgstr ""
+
+#: angledglass.lua:681
+msgid "Glass Obsidian Glass"
+msgstr ""
+
+#: angledglass.lua:699
+msgid "Obsidian Obsidian Glass"
+msgstr ""
+
+#: angledglass.lua:708
+msgid "Obsidian Block Glass"
+msgstr ""
+
+#: angledglass.lua:717
+msgid "Obsidian Block Obsidian Glass"
+msgstr ""
+
+#: angledglass.lua:726
+msgid "Obsidian Brick Glass"
+msgstr ""
+
+#: angledglass.lua:735
+msgid "Obsidian Brick Obsidian Glass"
+msgstr ""
+
+#: angledglass.lua:744
+msgid "Obsidian Glass Glass"
+msgstr ""
+
+#: angledglass.lua:753
+msgid "Obsidian Glass Obsidian Glass"
+msgstr ""
+
+#: angledglass.lua:762
+msgid "Snow Glass"
+msgstr ""
+
+#: angledglass.lua:771
+msgid "Snow Obsidian Glass"
+msgstr ""
+
+#: angledglass.lua:780
+msgid "Ice Glass"
+msgstr ""
+
+#: angledglass.lua:789
+msgid "Ice Obsidian Glass"
+msgstr ""
+
+#: angledwalls.lua:186
+msgid "Acacia Wood Angled Wall"
+msgstr ""
+
+#: angledwalls.lua:187
+msgid "Acacia Wood Low Angled Wall"
+msgstr ""
+
+#: angledwalls.lua:188
+msgid "Acacia Wood Corner"
+msgstr ""
+
+#: angledwalls.lua:197
+msgid "Aspen Wood Angled Wall"
+msgstr ""
+
+#: angledwalls.lua:198
+msgid "Aspen Wood Low Angled Wall"
+msgstr ""
+
+#: angledwalls.lua:199
+msgid "Aspen Wood Corner"
+msgstr ""
+
+#: angledwalls.lua:208
+msgid "Junglewood Angled Wall"
+msgstr ""
+
+#: angledwalls.lua:209
+msgid "Junglewood Low Angled Wall"
+msgstr ""
+
+#: angledwalls.lua:210
+msgid "junglewood Corner"
+msgstr ""
+
+#: angledwalls.lua:219
+msgid "Pine Wood Angled Wall"
+msgstr ""
+
+#: angledwalls.lua:220
+msgid "Pine Wood Low Angled Wall"
+msgstr ""
+
+#: angledwalls.lua:221
+msgid "Pine Wood Corner"
+msgstr ""
+
+#: angledwalls.lua:230
+msgid "Wooden Angled Wall"
+msgstr ""
+
+#: angledwalls.lua:231
+msgid "Wooden Low Angled Wall"
+msgstr ""
+
+#: angledwalls.lua:232
+msgid "Wooden Corner"
+msgstr ""
+
+#: angledwalls.lua:236
+msgid "Brick Angled Wall"
+msgstr ""
+
+#: angledwalls.lua:236
+msgid "Brick Low Angled Wall"
+msgstr ""
+
+#: angledwalls.lua:236
+msgid "Brick Corner"
+msgstr ""
+
+#: angledwalls.lua:243
+msgid "Bronze Block Angled Wall"
+msgstr ""
+
+#: angledwalls.lua:244
+msgid "Bronze Block Low Angled Wall"
+msgstr ""
+
+#: angledwalls.lua:245
+msgid "Bronze Block Corner"
+msgstr ""
+
+#: angledwalls.lua:249
+msgid "Clay Angled Wall"
+msgstr ""
+
+#: angledwalls.lua:249
+msgid "Clay Low Angled Wall"
+msgstr ""
+
+#: angledwalls.lua:249
+msgid "Clay Corner"
+msgstr ""
+
+#: angledwalls.lua:256
+msgid "Coal Block Angled Wall"
+msgstr ""
+
+#: angledwalls.lua:257
+msgid "Coal Block Low Angled Wall"
+msgstr ""
+
+#: angledwalls.lua:258
+msgid "Coal Block Corner"
+msgstr ""
+
+#: angledwalls.lua:267
+msgid "Copper Block Angled Wall"
+msgstr ""
+
+#: angledwalls.lua:268
+msgid "Copper Block Low_angled Wall"
+msgstr ""
+
+#: angledwalls.lua:269
+msgid "Copper Block Corner"
+msgstr ""
+
+#: angledwalls.lua:278
+msgid "Diamond Block Angled Wall"
+msgstr ""
+
+#: angledwalls.lua:279
+msgid "Diamond Block Low_angled Wall"
+msgstr ""
+
+#: angledwalls.lua:280
+msgid "Diamond Block Corner"
+msgstr ""
+
+#: angledwalls.lua:289
+msgid "Gold Block Angled Wall"
+msgstr ""
+
+#: angledwalls.lua:290
+msgid "Gold Block Low_angled Wall"
+msgstr ""
+
+#: angledwalls.lua:291
+msgid "Gold Block Corner"
+msgstr ""
+
+#: angledwalls.lua:300
+msgid "Mese Block Angled Wall"
+msgstr ""
+
+#: angledwalls.lua:301
+msgid "Mese Block Low_angled Wall"
+msgstr ""
+
+#: angledwalls.lua:302
+msgid "Mese Block Corner"
+msgstr ""
+
+#: angledwalls.lua:311
+msgid "Steel Block Angled Wall"
+msgstr ""
+
+#: angledwalls.lua:312
+msgid "Steel Block Low_angled Wall"
+msgstr ""
+
+#: angledwalls.lua:313
+msgid "Steel Block Corner"
+msgstr ""
+
+#: angledwalls.lua:322
+msgid "Tin Block Angled Wall"
+msgstr ""
+
+#: angledwalls.lua:323
+msgid "Tin Block Low_angled Wall"
+msgstr ""
+
+#: angledwalls.lua:324
+msgid "Tin Block Corner"
+msgstr ""
+
+#: angledwalls.lua:333
+msgid "Cobblestone Angled Wall"
+msgstr ""
+
+#: angledwalls.lua:334
+msgid "Cobblestone Low Angled Wall"
+msgstr ""
+
+#: angledwalls.lua:335
+msgid "Cobblestone Corner"
+msgstr ""
+
+#: angledwalls.lua:344
+msgid "Mossycobble Angled Wall"
+msgstr ""
+
+#: angledwalls.lua:345
+msgid "Mossycobble Low Angled Wall"
+msgstr ""
+
+#: angledwalls.lua:346
+msgid "Mossycobble Corner"
+msgstr ""
+
+#: angledwalls.lua:350
+msgid "Stone Angled Wall"
+msgstr ""
+
+#: angledwalls.lua:350
+msgid "Stone Low Angled Wall"
+msgstr ""
+
+#: angledwalls.lua:350
+msgid "Stone Corner"
+msgstr ""
+
+#: angledwalls.lua:357
+msgid "Stone Block Angled Wall"
+msgstr ""
+
+#: angledwalls.lua:358
+msgid "Stone Block Low Angled Wall"
+msgstr ""
+
+#: angledwalls.lua:359
+msgid "Stone Block Corner"
+msgstr ""
+
+#: angledwalls.lua:368
+msgid "Stone Brick Angled Wall"
+msgstr ""
+
+#: angledwalls.lua:369
+msgid "Stone Brick Low Angled Wall"
+msgstr ""
+
+#: angledwalls.lua:370
+msgid "Stone Brick Corner"
+msgstr ""
+
+#: angledwalls.lua:379
+msgid "Desert Cobble Angled Wall"
+msgstr ""
+
+#: angledwalls.lua:380
+msgid "Desert Cobble Low Angled Wall"
+msgstr ""
+
+#: angledwalls.lua:381
+msgid "Desert Cobble Corner"
+msgstr ""
+
+#: angledwalls.lua:390
+msgid "Desert Stone Angled Wall"
+msgstr ""
+
+#: angledwalls.lua:391
+msgid "Desert Stone Low Angled Wall"
+msgstr ""
+
+#: angledwalls.lua:392
+msgid "Desert Stone Corner"
+msgstr ""
+
+#: angledwalls.lua:401
+msgid "Desert Stone Block Angled Wall"
+msgstr ""
+
+#: angledwalls.lua:402
+msgid "Desert Stone Block Low Angled Wall"
+msgstr ""
+
+#: angledwalls.lua:403
+msgid "Desert Stone Block Corner"
+msgstr ""
+
+#: angledwalls.lua:412
+msgid "Desert Stone Brick Angled Wall"
+msgstr ""
+
+#: angledwalls.lua:413
+msgid "Desert Stone Brick Low Angled Wall"
+msgstr ""
+
+#: angledwalls.lua:414
+msgid "Desert Stone Brick Corner"
+msgstr ""
+
+#: angledwalls.lua:423
+msgid "Desert Sandstone Angled Wall"
+msgstr ""
+
+#: angledwalls.lua:424
+msgid "Desert Sandstone Low Angled Wall"
+msgstr ""
+
+#: angledwalls.lua:425
+msgid "Desert Sandstone Corner"
+msgstr ""
+
+#: angledwalls.lua:434
+msgid "Desert Sandstone Block Angled Wall"
+msgstr ""
+
+#: angledwalls.lua:435
+msgid "Desert Sandstone Block Low Angled Wall"
+msgstr ""
+
+#: angledwalls.lua:436
+msgid "Desert Sandstone Block Corner"
+msgstr ""
+
+#: angledwalls.lua:445
+msgid "Desert Sandstone Brick Angled Wall"
+msgstr ""
+
+#: angledwalls.lua:446
+msgid "Desert Sandstone Brick Low Angled Wall"
+msgstr ""
+
+#: angledwalls.lua:447
+msgid "Desert Sandstone Brick Corner"
+msgstr ""
+
+#: angledwalls.lua:456
+msgid "Sandstone Angled Wall"
+msgstr ""
+
+#: angledwalls.lua:457
+msgid "Sandstone Low Angled Wall"
+msgstr ""
+
+#: angledwalls.lua:458
+msgid "Sandstone Corner"
+msgstr ""
+
+#: angledwalls.lua:467
+msgid "Sandstone Block Angled Wall"
+msgstr ""
+
+#: angledwalls.lua:468
+msgid "Sandstone Block Low Angled Wall"
+msgstr ""
+
+#: angledwalls.lua:469
+msgid "Sandstone Block Corner"
+msgstr ""
+
+#: angledwalls.lua:478
+msgid "Sandstone Brick Angled Wall"
+msgstr ""
+
+#: angledwalls.lua:479
+msgid "Sandstone Brick Low Angled Wall"
+msgstr ""
+
+#: angledwalls.lua:480
+msgid "Sandstone Brick Corner"
+msgstr ""
+
+#: angledwalls.lua:489
+msgid "Silver Sandstone Angled Wall"
+msgstr ""
+
+#: angledwalls.lua:490
+msgid "Silver Sandstone Low Angled Wall"
+msgstr ""
+
+#: angledwalls.lua:491
+msgid "Silver Sandstone Corner"
+msgstr ""
+
+#: angledwalls.lua:500
+msgid "Silver Sandstone Block Angled Wall"
+msgstr ""
+
+#: angledwalls.lua:501
+msgid "Silver Sandstone Block Low Angled Wall"
+msgstr ""
+
+#: angledwalls.lua:502
+msgid "Silver Sandstone Block Corner"
+msgstr ""
+
+#: angledwalls.lua:511
+msgid "Silver Sandstone Brick Angled Wall"
+msgstr ""
+
+#: angledwalls.lua:512
+msgid "Silver Sandstone Brick Low Angled Wall"
+msgstr ""
+
+#: angledwalls.lua:513
+msgid "Silver Sandstone Brick Corner"
+msgstr ""
+
+#: angledwalls.lua:522
+msgid "Obsidian Angled Wall"
+msgstr ""
+
+#: angledwalls.lua:523
+msgid "Obsidian Low Angled Wall"
+msgstr ""
+
+#: angledwalls.lua:524
+msgid "Obsidian Corner"
+msgstr ""
+
+#: angledwalls.lua:533
+msgid "Obsidian Block Angled Wall"
+msgstr ""
+
+#: angledwalls.lua:534
+msgid "Obsidian Block Low Angled Wall"
+msgstr ""
+
+#: angledwalls.lua:535
+msgid "Obsidian Block Corner"
+msgstr ""
+
+#: angledwalls.lua:544
+msgid "Obsidian Brick Angled Wall"
+msgstr ""
+
+#: angledwalls.lua:545
+msgid "Obsidian Brick Low Angled Wall"
+msgstr ""
+
+#: angledwalls.lua:546
+msgid "Obsidian Brick Corner"
+msgstr ""
+
+#: angledwalls.lua:550
+msgid "Glass Angled Wall"
+msgstr ""
+
+#: angledwalls.lua:550
+msgid "Glass Low Angled Wall"
+msgstr ""
+
+#: angledwalls.lua:550
+msgid "Glass Corner"
+msgstr ""
+
+#: angledwalls.lua:557
+msgid "Obsidian Glass Angled Wall"
+msgstr ""
+
+#: angledwalls.lua:558
+msgid "Obsidian Glass Low Angled Wall"
+msgstr ""
+
+#: angledwalls.lua:559
+msgid "Obsidian Glass Corner"
+msgstr ""
+
+#: angledwalls.lua:563
+msgid "Ice Angled Wall"
+msgstr ""
+
+#: angledwalls.lua:563
+msgid "Ice Low Angled Wall"
+msgstr ""
+
+#: angledwalls.lua:563
+msgid "Ice Corner"
+msgstr ""
+
+#: angledwalls.lua:565
+msgid "Snow Angled Wall"
+msgstr ""
+
+#: angledwalls.lua:565
+msgid "Snow Low Angled Wall"
+msgstr ""
+
+#: angledwalls.lua:565
+msgid "Snow Corner"
+msgstr ""
+
+#: bakedclay.lua:10
+msgid "Baked Clay Black Angled Wall"
+msgstr ""
+
+#: bakedclay.lua:11
+msgid "Baked Clay Black Low Angled Wall"
+msgstr ""
+
+#: bakedclay.lua:12
+msgid "Baked Clay Black Corner"
+msgstr ""
+
+#: bakedclay.lua:21
+msgid "Baked Clay Blue Angled Wall"
+msgstr ""
+
+#: bakedclay.lua:22
+msgid "Baked Clay Blue Low Angled Wall"
+msgstr ""
+
+#: bakedclay.lua:23
+msgid "Baked Clay Blue Corner"
+msgstr ""
+
+#: bakedclay.lua:32
+msgid "Baked Clay Brown Angled Wall"
+msgstr ""
+
+#: bakedclay.lua:33
+msgid "Baked Clay Brown Low Angled Wall"
+msgstr ""
+
+#: bakedclay.lua:34
+msgid "Baked Clay Brown Corner"
+msgstr ""
+
+#: bakedclay.lua:43
+msgid "Baked Clay Cyan Angled Wall"
+msgstr ""
+
+#: bakedclay.lua:44
+msgid "Baked Clay Cyan Low Angled Wall"
+msgstr ""
+
+#: bakedclay.lua:45
+msgid "Baked Clay Cyan Corner"
+msgstr ""
+
+#: bakedclay.lua:54
+msgid "Baked Clay Dark Green Angled Wall"
+msgstr ""
+
+#: bakedclay.lua:55
+msgid "Baked Clay Dark Green Low Angled Wall"
+msgstr ""
+
+#: bakedclay.lua:56
+msgid "Baked Clay Dark Green Corner"
+msgstr ""
+
+#: bakedclay.lua:65
+msgid "Baked Clay Dark Grey Angled Wall"
+msgstr ""
+
+#: bakedclay.lua:66
+msgid "Baked Clay Dark Grey Low Angled Wall"
+msgstr ""
+
+#: bakedclay.lua:67
+msgid "Baked Clay Dark Grey Corner"
+msgstr ""
+
+#: bakedclay.lua:76
+msgid "Baked Clay Green Angled Wall"
+msgstr ""
+
+#: bakedclay.lua:77
+msgid "Baked Clay Green Low Angled Wall"
+msgstr ""
+
+#: bakedclay.lua:78
+msgid "Baked Clay Green Corner"
+msgstr ""
+
+#: bakedclay.lua:87
+msgid "Baked Clay Grey Angled Wall"
+msgstr ""
+
+#: bakedclay.lua:88
+msgid "Baked Clay Grey Low Angled Wall"
+msgstr ""
+
+#: bakedclay.lua:89
+msgid "Baked Clay Grey Corner"
+msgstr ""
+
+#: bakedclay.lua:98
+msgid "Baked Clay Magenta Angled Wall"
+msgstr ""
+
+#: bakedclay.lua:99
+msgid "Baked Clay Magenta Low Angled Wall"
+msgstr ""
+
+#: bakedclay.lua:100
+msgid "Baked Clay Magenta Corner"
+msgstr ""
+
+#: bakedclay.lua:109
+msgid "Baked Clay Orange Angled Wall"
+msgstr ""
+
+#: bakedclay.lua:110
+msgid "Baked Clay Orange Low Angled Wall"
+msgstr ""
+
+#: bakedclay.lua:111
+msgid "Baked Clay Orange Corner"
+msgstr ""
+
+#: bakedclay.lua:120
+msgid "Baked Clay Pink Angled Wall"
+msgstr ""
+
+#: bakedclay.lua:121
+msgid "Baked Clay Pink Low Angled Wall"
+msgstr ""
+
+#: bakedclay.lua:122
+msgid "Baked Clay Pink Corner"
+msgstr ""
+
+#: bakedclay.lua:131
+msgid "Baked Clay Red Angled Wall"
+msgstr ""
+
+#: bakedclay.lua:132
+msgid "Baked Clay Red Low Angled Wall"
+msgstr ""
+
+#: bakedclay.lua:133
+msgid "Baked Clay Red Corner"
+msgstr ""
+
+#: bakedclay.lua:142
+msgid "Baked Clay Violet Angled Wall"
+msgstr ""
+
+#: bakedclay.lua:143
+msgid "Baked Clay Violet Low Angled Wall"
+msgstr ""
+
+#: bakedclay.lua:144
+msgid "Baked Clay Violet Corner"
+msgstr ""
+
+#: bakedclay.lua:153
+msgid "Baked Clay White Angled Wall"
+msgstr ""
+
+#: bakedclay.lua:154
+msgid "Baked Clay White Low Angled Wall"
+msgstr ""
+
+#: bakedclay.lua:155
+msgid "Baked Clay White Corner"
+msgstr ""
+
+#: bakedclay.lua:164
+msgid "Baked Clay Yellow Angled Wall"
+msgstr ""
+
+#: bakedclay.lua:165
+msgid "Baked Clay Yellow Low Angled Wall"
+msgstr ""
+
+#: bakedclay.lua:166
+msgid "Baked Clay Yellow Corner"
+msgstr ""
+
+#: bakedclay.lua:177
+msgid "Baked Clay Black Glass"
+msgstr ""
+
+#: bakedclay.lua:186
+msgid "Baked Clay Black Obsidian Glass"
+msgstr ""
+
+#: bakedclay.lua:195
+msgid "Baked Clay Blue Glass"
+msgstr ""
+
+#: bakedclay.lua:204
+msgid "Baked Clay Blue Obsidian Glass"
+msgstr ""
+
+#: bakedclay.lua:213
+msgid "Baked Clay Brown Glass"
+msgstr ""
+
+#: bakedclay.lua:222
+msgid "Baked Clay Brown Obsidian Glass"
+msgstr ""
+
+#: bakedclay.lua:231
+msgid "Baked Clay Cyan Glass"
+msgstr ""
+
+#: bakedclay.lua:240
+msgid "Baked Clay Cyan Obsidian Glass"
+msgstr ""
+
+#: bakedclay.lua:249
+msgid "Baked Clay Dark Green Glass"
+msgstr ""
+
+#: bakedclay.lua:258
+msgid "Baked Clay Dark Green Obsidian Glass"
+msgstr ""
+
+#: bakedclay.lua:267
+msgid "Baked Clay Dark Grey Glass"
+msgstr ""
+
+#: bakedclay.lua:276
+msgid "Baked Clay Dark Grey Obsidian Glass"
+msgstr ""
+
+#: bakedclay.lua:285
+msgid "Baked Clay Green Glass"
+msgstr ""
+
+#: bakedclay.lua:294
+msgid "Baked Clay Green Obsidian Glass"
+msgstr ""
+
+#: bakedclay.lua:303
+msgid "Baked Clay Grey Glass"
+msgstr ""
+
+#: bakedclay.lua:312
+msgid "Baked Clay Grey Obsidian Glass"
+msgstr ""
+
+#: bakedclay.lua:321
+msgid "Baked Clay Magenta Glass"
+msgstr ""
+
+#: bakedclay.lua:330
+msgid "Baked Clay Magenta Obsidian Glass"
+msgstr ""
+
+#: bakedclay.lua:339
+msgid "Baked Clay Orange Glass"
+msgstr ""
+
+#: bakedclay.lua:348
+msgid "Baked Clay Orange Obsidian Glass"
+msgstr ""
+
+#: bakedclay.lua:357
+msgid "Baked Clay Pink Glass"
+msgstr ""
+
+#: bakedclay.lua:366
+msgid "Baked Clay Pink Obsidian Glass"
+msgstr ""
+
+#: bakedclay.lua:375
+msgid "Baked Clay Red Glass"
+msgstr ""
+
+#: bakedclay.lua:384
+msgid "Baked Clay Red Obsidian Glass"
+msgstr ""
+
+#: bakedclay.lua:393
+msgid "Baked Clay Violet Glass"
+msgstr ""
+
+#: bakedclay.lua:402
+msgid "Baked Clay Violet Obsidian Glass"
+msgstr ""
+
+#: bakedclay.lua:411
+msgid "Baked Clay White Glass"
+msgstr ""
+
+#: bakedclay.lua:420
+msgid "Baked Clay White Obsidian Glass"
+msgstr ""
+
+#: bakedclay.lua:429
+msgid "Baked Clay Yellow Glass"
+msgstr ""
+
+#: bakedclay.lua:438
+msgid "Baked Clay Yellow Obsidian Glass"
+msgstr ""
+
+#: quartz.lua:10
+msgid "Quartz Block Angled Wall"
+msgstr ""
+
+#: quartz.lua:11
+msgid "Quartz Block Low Angled Wall"
+msgstr ""
+
+#: quartz.lua:12
+msgid "Quartz Block Corner"
+msgstr ""
+
+#: quartz.lua:21
+msgid "Quartz Chiseled Angled Wall"
+msgstr ""
+
+#: quartz.lua:22
+msgid "Quartz Chiseled Low Angled Wall"
+msgstr ""
+
+#: quartz.lua:23
+msgid "Quartz Chiseled Corner"
+msgstr ""
+
+#: quartz.lua:32
+msgid "Quartz Pillar Angled Wall"
+msgstr ""
+
+#: quartz.lua:33
+msgid "Quartz Pillar Low Angled Wall"
+msgstr ""
+
+#: quartz.lua:34
+msgid "Quartz Pillar Corner"
+msgstr ""
+
+#: quartz.lua:45
+msgid "Quartz Block Glass"
+msgstr ""
+
+#: quartz.lua:54
+msgid "Quartz Block Obsidian Glass"
+msgstr ""
+
+#: slopedwalls.lua:52
+msgid "Acacia Sloped Wall"
+msgstr ""
+
+#: slopedwalls.lua:61
+msgid "Aspen Sloped Wall"
+msgstr ""
+
+#: slopedwalls.lua:70
+msgid "Junglewood Sloped Wall"
+msgstr ""
+
+#: slopedwalls.lua:79
+msgid "Pine Sloped Wall"
+msgstr ""
+
+#: slopedwalls.lua:88
+msgid "Wooden Sloped Wall"
+msgstr ""
+
+#: slopedwalls.lua:97
+msgid "Brick Sloped Wall"
+msgstr ""
+
+#: slopedwalls.lua:106
+msgid "Clay Sloped Wall"
+msgstr ""
+
+#: slopedwalls.lua:115
+msgid "Cobblestone Sloped Wall"
+msgstr ""
+
+#: slopedwalls.lua:124
+msgid "Mossy Cobblestone Sloped Wall"
+msgstr ""
+
+#: slopedwalls.lua:133
+msgid "Desert Cobble Sloped Wall"
+msgstr ""
+
+#: slopedwalls.lua:142
+msgid "Desert Stone Sloped Wall"
+msgstr ""
+
+#: slopedwalls.lua:151
+msgid "Desert Stone Block Sloped Wall"
+msgstr ""
+
+#: slopedwalls.lua:160
+msgid "Desert Stone Brick Sloped Wall"
+msgstr ""
+
+#: slopedwalls.lua:169
+msgid "Desert Sandstone Sloped Wall"
+msgstr ""
+
+#: slopedwalls.lua:178
+msgid "Desert Sandstone Block Sloped Wall"
+msgstr ""
+
+#: slopedwalls.lua:187
+msgid "Desert Sandstone Brick Sloped Wall"
+msgstr ""
+
+#: slopedwalls.lua:196
+msgid "Sandstone Sloped Wall"
+msgstr ""
+
+#: slopedwalls.lua:205
+msgid "Sandstone Block Sloped Wall"
+msgstr ""
+
+#: slopedwalls.lua:214
+msgid "Sandstone Brick Sloped Wall"
+msgstr ""
+
+#: slopedwalls.lua:223
+msgid "Silver Sandstone Sloped Wall"
+msgstr ""
+
+#: slopedwalls.lua:232
+msgid "Silver Sandstone Block Sloped Wall"
+msgstr ""
+
+#: slopedwalls.lua:241
+msgid "Silver Sandstone Brick Sloped Wall"
+msgstr ""
+
+#: slopedwalls.lua:250
+msgid "Stone Sloped Wall"
+msgstr ""
+
+#: slopedwalls.lua:259
+msgid "Stone Block Sloped Wall"
+msgstr ""
+
+#: slopedwalls.lua:268
+msgid "Stone Brick Sloped Wall"
+msgstr ""
+
+#: slopedwalls.lua:277
+msgid "Obsidian Sloped Wall"
+msgstr ""
+
+#: slopedwalls.lua:286
+msgid "Obsidian Block Sloped Wall"
+msgstr ""
+
+#: slopedwalls.lua:295
+msgid "Obsidian Brick Sloped Wall"
+msgstr ""
+
+#: slopedwalls.lua:304
+msgid "Bronze Block Sloped Wall"
+msgstr ""
+
+#: slopedwalls.lua:313
+msgid "Copper Block Sloped Wall"
+msgstr ""
+
+#: slopedwalls.lua:322
+msgid "Diamond Block Sloped Wall"
+msgstr ""
+
+#: slopedwalls.lua:331
+msgid "Gold Block Sloped Wall"
+msgstr ""
+
+#: slopedwalls.lua:340
+msgid "Mese Block Sloped Wall"
+msgstr ""
+
+#: slopedwalls.lua:349
+msgid "Steel Block Sloped Wall"
+msgstr ""
+
+#: slopedwalls.lua:358
+msgid "Tin Block Sloped Wall"
+msgstr ""
