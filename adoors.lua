@@ -57,7 +57,7 @@ for _, row in ipairs(adoors.door) do
 	local mat_sound = row[4]
 	local door_sound = row[5]
 	local door_tiles = row[6]
-	local craft_material = row[7]
+	--local craft_material = row[7]
 
 	core.register_node(":adoors:" .. name .. "_Ldoor", {
 		description = S("@1 Door (left)", desc),
