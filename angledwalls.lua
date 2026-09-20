@@ -30,7 +30,7 @@ local ALPHA_OPAQUE = core.features.use_texture_alpha_string_modes and "opaque" o
 local function fallback_fields(recipeitem, ndef)
 	local rdef = core.registered_nodes[recipeitem]
 	if not rdef then
-		core.log("info", "[angledwalls] Recipe item '" .. recipeitem .. "' not found. Falling back to defaults...")
+		core.log("warning", "[angledwalls] Recipe item '" .. recipeitem .. "' not found. Falling back to defaults...")
 	end
 
 	local defaults = {
@@ -311,8 +311,8 @@ register_all(
 )
 
 register_all(
-	nil,
-	"default:meseblock",
+	"meseblock",
+	"default:mese",
 	nil,
 	nil,
 	S("Mese Block Angled Wall"),
@@ -399,8 +399,8 @@ register_all(
 )
 
 register_all(
-	nil,
-	"default:desertscobble",
+	"desertscobble",
+	"default:desert_cobble",
 	nil,
 	nil,
 	S("Desert Cobble Angled Wall"),
@@ -410,8 +410,8 @@ register_all(
 )
 
 register_all(
-	nil,
-	"default:desertstone",
+	"desertstone",
+	"default:desert_stone",
 	nil,
 	nil,
 	S("Desert Stone Angled Wall"),
@@ -564,8 +564,8 @@ register_all(
 )
 
 register_all(
-	nil,
-	"default:obsidian_brick",
+	"obsidian_brick",
+	"default:obsidianbrick",
 	nil,
 	nil,
 	S("Obsidian Brick Angled Wall"),
